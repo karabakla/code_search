@@ -1,0 +1,15 @@
+{
+    "2_28_17_6": {
+        "code": "[28, 17] linear code over GF(2)",
+        "min_distance": 5,
+        "parent_code": {
+            "code": "[27, 17] linear code over GF(2)",
+            "min_distance": 5,
+            "parent_code": null,
+            "const_method_params": "",
+            "gen_objects": "None"
+        },
+        "const_method_params": "prop_4_2_generate_new_code_from r = 1",
+        "gen_objects": "((1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))"
+    }
+}

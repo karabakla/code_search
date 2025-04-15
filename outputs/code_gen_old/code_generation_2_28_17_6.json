@@ -1,0 +1,21 @@
+{
+    "2_28_17_6": {
+        "code": "[28, 17] linear code over GF(2)",
+        "min_distance": 5,
+        "parent_code": {
+            "code": "[29, 18] linear code over GF(2)",
+            "min_distance": 3,
+            "parent_code": {
+                "code": "[27, 17] linear code over GF(2)",
+                "min_distance": 5,
+                "parent_code": null,
+                "const_method_params": "",
+                "gen_objects": "None"
+            },
+            "const_method_params": "theorem_4_3_extended_const_method_generate_new_code_from r = 2",
+            "gen_objects": "((1, 0), (1, 1), (0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0))"
+        },
+        "const_method_params": "lemma_4_1_generate_new_code_from shortened code at 0",
+        "gen_objects": "0"
+    }
+}

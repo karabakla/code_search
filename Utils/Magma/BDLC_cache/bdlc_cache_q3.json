@@ -1,0 +1,6771 @@
+{
+    "Dim_BDLC_3_20_4": {
+        "q": 3,
+        "n": 20,
+        "k": 15,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_20_8": {
+        "q": 3,
+        "n": 20,
+        "k": 9,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_2": {
+        "q": 3,
+        "n": 22,
+        "k": 21,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_22_4": {
+        "q": 3,
+        "n": 22,
+        "k": 16,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_20_2": {
+        "q": 3,
+        "n": 20,
+        "k": 19,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_25_5": {
+        "q": 3,
+        "n": 25,
+        "k": 18,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_8": {
+        "q": 3,
+        "n": 26,
+        "k": 13,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_10": {
+        "q": 3,
+        "n": 26,
+        "k": 10,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_10": {
+        "q": 3,
+        "n": 25,
+        "k": 10,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_6": {
+        "q": 3,
+        "n": 26,
+        "k": 18,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_12": {
+        "q": 3,
+        "n": 26,
+        "k": 9,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_2": {
+        "q": 3,
+        "n": 26,
+        "k": 25,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_26_4": {
+        "q": 3,
+        "n": 26,
+        "k": 20,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_26_5": {
+        "q": 3,
+        "n": 26,
+        "k": 19,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_7": {
+        "q": 3,
+        "n": 26,
+        "k": 15,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_12": {
+        "q": 3,
+        "n": 28,
+        "k": 10,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_8": {
+        "q": 3,
+        "n": 28,
+        "k": 15,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_2": {
+        "q": 3,
+        "n": 28,
+        "k": 27,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_28_4": {
+        "q": 3,
+        "n": 28,
+        "k": 22,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_28_10": {
+        "q": 3,
+        "n": 28,
+        "k": 12,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_7": {
+        "q": 3,
+        "n": 28,
+        "k": 16,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_2": {
+        "q": 3,
+        "n": 32,
+        "k": 31,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_32_8": {
+        "q": 3,
+        "n": 32,
+        "k": 18,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_4": {
+        "q": 3,
+        "n": 32,
+        "k": 26,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_4": {
+        "q": 3,
+        "n": 34,
+        "k": 28,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_2": {
+        "q": 3,
+        "n": 34,
+        "k": 33,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_35_11": {
+        "q": 3,
+        "n": 35,
+        "k": 18,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_7": {
+        "q": 3,
+        "n": 35,
+        "k": 22,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_35_4": {
+        "q": 3,
+        "n": 35,
+        "k": 29,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_35_5": {
+        "q": 3,
+        "n": 35,
+        "k": 27,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_2": {
+        "q": 3,
+        "n": 35,
+        "k": 34,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_35_14": {
+        "q": 3,
+        "n": 35,
+        "k": 12,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_37_12": {
+        "q": 3,
+        "n": 37,
+        "k": 18,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_37_10": {
+        "q": 3,
+        "n": 37,
+        "k": 19,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_2": {
+        "q": 3,
+        "n": 38,
+        "k": 37,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_38_4": {
+        "q": 3,
+        "n": 38,
+        "k": 32,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_8": {
+        "q": 3,
+        "n": 40,
+        "k": 25,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_4": {
+        "q": 3,
+        "n": 40,
+        "k": 34,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_10": {
+        "q": 3,
+        "n": 40,
+        "k": 21,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_16": {
+        "q": 3,
+        "n": 40,
+        "k": 13,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_2": {
+        "q": 3,
+        "n": 40,
+        "k": 39,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_40_14": {
+        "q": 3,
+        "n": 40,
+        "k": 17,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_5": {
+        "q": 3,
+        "n": 40,
+        "k": 32,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_6": {
+        "q": 3,
+        "n": 40,
+        "k": 29,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_41_22": {
+        "q": 3,
+        "n": 41,
+        "k": 8,
+        "d": 22,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_41_8": {
+        "q": 3,
+        "n": 41,
+        "k": 26,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_41_12": {
+        "q": 3,
+        "n": 41,
+        "k": 20,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_41_7": {
+        "q": 3,
+        "n": 41,
+        "k": 28,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_41_20": {
+        "q": 3,
+        "n": 41,
+        "k": 10,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_41_5": {
+        "q": 3,
+        "n": 41,
+        "k": 33,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_41_14": {
+        "q": 3,
+        "n": 41,
+        "k": 18,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_8": {
+        "q": 3,
+        "n": 44,
+        "k": 29,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_4": {
+        "q": 3,
+        "n": 44,
+        "k": 38,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_2": {
+        "q": 3,
+        "n": 44,
+        "k": 43,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_44_11": {
+        "q": 3,
+        "n": 44,
+        "k": 24,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_4": {
+        "q": 3,
+        "n": 46,
+        "k": 40,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_2": {
+        "q": 3,
+        "n": 46,
+        "k": 45,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_2": {
+        "q": 3,
+        "n": 49,
+        "k": 48,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_50_4": {
+        "q": 3,
+        "n": 50,
+        "k": 44,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_15": {
+        "q": 3,
+        "n": 49,
+        "k": 24,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_7": {
+        "q": 3,
+        "n": 49,
+        "k": 35,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_50_10": {
+        "q": 3,
+        "n": 50,
+        "k": 30,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_2": {
+        "q": 3,
+        "n": 50,
+        "k": 49,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_50_20": {
+        "q": 3,
+        "n": 50,
+        "k": 14,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_5": {
+        "q": 3,
+        "n": 50,
+        "k": 41,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_52_4": {
+        "q": 3,
+        "n": 52,
+        "k": 46,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_2": {
+        "q": 3,
+        "n": 52,
+        "k": 51,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_52_8": {
+        "q": 3,
+        "n": 52,
+        "k": 36,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_52_12": {
+        "q": 3,
+        "n": 52,
+        "k": 28,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_6": {
+        "q": 3,
+        "n": 52,
+        "k": 41,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_52_9": {
+        "q": 3,
+        "n": 52,
+        "k": 33,
+        "d": 9,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_52_10": {
+        "q": 3,
+        "n": 52,
+        "k": 32,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_24": {
+        "q": 3,
+        "n": 52,
+        "k": 12,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_7": {
+        "q": 3,
+        "n": 52,
+        "k": 38,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_15": {
+        "q": 3,
+        "n": 52,
+        "k": 26,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_20": {
+        "q": 3,
+        "n": 52,
+        "k": 16,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_16": {
+        "q": 3,
+        "n": 52,
+        "k": 24,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_13": {
+        "q": 3,
+        "n": 52,
+        "k": 27,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_5": {
+        "q": 3,
+        "n": 52,
+        "k": 43,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_5": {
+        "q": 3,
+        "n": 55,
+        "k": 46,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_55_11": {
+        "q": 3,
+        "n": 55,
+        "k": 32,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_55_2": {
+        "q": 3,
+        "n": 55,
+        "k": 54,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_55_24": {
+        "q": 3,
+        "n": 55,
+        "k": 15,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_10": {
+        "q": 3,
+        "n": 55,
+        "k": 35,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_4": {
+        "q": 3,
+        "n": 55,
+        "k": 49,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_8": {
+        "q": 3,
+        "n": 56,
+        "k": 40,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_10": {
+        "q": 3,
+        "n": 56,
+        "k": 36,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_14": {
+        "q": 3,
+        "n": 56,
+        "k": 30,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_2": {
+        "q": 3,
+        "n": 56,
+        "k": 55,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_56_4": {
+        "q": 3,
+        "n": 56,
+        "k": 50,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_7": {
+        "q": 3,
+        "n": 56,
+        "k": 41,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_24": {
+        "q": 3,
+        "n": 56,
+        "k": 15,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_16": {
+        "q": 3,
+        "n": 56,
+        "k": 28,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_21": {
+        "q": 3,
+        "n": 56,
+        "k": 18,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_2": {
+        "q": 3,
+        "n": 58,
+        "k": 57,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_58_4": {
+        "q": 3,
+        "n": 58,
+        "k": 51,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_61_5": {
+        "q": 3,
+        "n": 61,
+        "k": 52,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_61_31": {
+        "q": 3,
+        "n": 61,
+        "k": 11,
+        "d": 31,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_61_20": {
+        "q": 3,
+        "n": 61,
+        "k": 22,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_61_12": {
+        "q": 3,
+        "n": 61,
+        "k": 35,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_61_21": {
+        "q": 3,
+        "n": 61,
+        "k": 21,
+        "d": 21,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_61_11": {
+        "q": 3,
+        "n": 61,
+        "k": 38,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_61_6": {
+        "q": 3,
+        "n": 61,
+        "k": 50,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_61_10": {
+        "q": 3,
+        "n": 61,
+        "k": 41,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_61_19": {
+        "q": 3,
+        "n": 61,
+        "k": 23,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_61_8": {
+        "q": 3,
+        "n": 61,
+        "k": 45,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_61_15": {
+        "q": 3,
+        "n": 61,
+        "k": 32,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_2": {
+        "q": 3,
+        "n": 62,
+        "k": 61,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_62_4": {
+        "q": 3,
+        "n": 62,
+        "k": 55,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_4": {
+        "q": 3,
+        "n": 64,
+        "k": 57,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_64_18": {
+        "q": 3,
+        "n": 64,
+        "k": 32,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_8": {
+        "q": 3,
+        "n": 64,
+        "k": 48,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_64_2": {
+        "q": 3,
+        "n": 64,
+        "k": 63,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_5": {
+        "q": 3,
+        "n": 65,
+        "k": 56,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_12": {
+        "q": 3,
+        "n": 65,
+        "k": 38,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_10": {
+        "q": 3,
+        "n": 65,
+        "k": 43,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_6": {
+        "q": 3,
+        "n": 65,
+        "k": 54,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_4": {
+        "q": 3,
+        "n": 65,
+        "k": 58,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_11": {
+        "q": 3,
+        "n": 65,
+        "k": 42,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_30": {
+        "q": 3,
+        "n": 65,
+        "k": 13,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_2": {
+        "q": 3,
+        "n": 65,
+        "k": 64,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_26": {
+        "q": 3,
+        "n": 65,
+        "k": 18,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_13": {
+        "q": 3,
+        "n": 65,
+        "k": 35,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_67_22": {
+        "q": 3,
+        "n": 67,
+        "k": 23,
+        "d": 22,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_68_4": {
+        "q": 3,
+        "n": 68,
+        "k": 61,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_68_2": {
+        "q": 3,
+        "n": 68,
+        "k": 67,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_68_8": {
+        "q": 3,
+        "n": 68,
+        "k": 52,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_17": {
+        "q": 3,
+        "n": 68,
+        "k": 33,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_8": {
+        "q": 3,
+        "n": 70,
+        "k": 54,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_5": {
+        "q": 3,
+        "n": 70,
+        "k": 61,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_20": {
+        "q": 3,
+        "n": 70,
+        "k": 29,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_2": {
+        "q": 3,
+        "n": 70,
+        "k": 69,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_70_4": {
+        "q": 3,
+        "n": 70,
+        "k": 63,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_70_10": {
+        "q": 3,
+        "n": 70,
+        "k": 48,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_7": {
+        "q": 3,
+        "n": 70,
+        "k": 55,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_14": {
+        "q": 3,
+        "n": 70,
+        "k": 39,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_28": {
+        "q": 3,
+        "n": 70,
+        "k": 18,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_24": {
+        "q": 3,
+        "n": 73,
+        "k": 25,
+        "d": 24,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_73_5": {
+        "q": 3,
+        "n": 73,
+        "k": 64,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_33": {
+        "q": 3,
+        "n": 73,
+        "k": 16,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_67_11": {
+        "q": 3,
+        "n": 67,
+        "k": 44,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_73_6": {
+        "q": 3,
+        "n": 73,
+        "k": 62,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_67_10": {
+        "q": 3,
+        "n": 67,
+        "k": 45,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_73_10": {
+        "q": 3,
+        "n": 73,
+        "k": 50,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_17": {
+        "q": 3,
+        "n": 73,
+        "k": 37,
+        "d": 17,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_73_20": {
+        "q": 3,
+        "n": 73,
+        "k": 32,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_34": {
+        "q": 3,
+        "n": 73,
+        "k": 15,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_15": {
+        "q": 3,
+        "n": 73,
+        "k": 38,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_11": {
+        "q": 3,
+        "n": 73,
+        "k": 48,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_13": {
+        "q": 3,
+        "n": 73,
+        "k": 43,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_74_20": {
+        "q": 3,
+        "n": 74,
+        "k": 33,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_74_2": {
+        "q": 3,
+        "n": 74,
+        "k": 73,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_74_4": {
+        "q": 3,
+        "n": 74,
+        "k": 67,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_74_14": {
+        "q": 3,
+        "n": 74,
+        "k": 43,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_74_22": {
+        "q": 3,
+        "n": 74,
+        "k": 28,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_74_10": {
+        "q": 3,
+        "n": 74,
+        "k": 51,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_74_11": {
+        "q": 3,
+        "n": 74,
+        "k": 49,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_4": {
+        "q": 3,
+        "n": 76,
+        "k": 69,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_2": {
+        "q": 3,
+        "n": 76,
+        "k": 75,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_76_20": {
+        "q": 3,
+        "n": 76,
+        "k": 35,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_18": {
+        "q": 3,
+        "n": 76,
+        "k": 38,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_8": {
+        "q": 3,
+        "n": 76,
+        "k": 60,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_19": {
+        "q": 3,
+        "n": 76,
+        "k": 36,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_77_2": {
+        "q": 3,
+        "n": 77,
+        "k": 76,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_77_14": {
+        "q": 3,
+        "n": 77,
+        "k": 46,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_77_7": {
+        "q": 3,
+        "n": 77,
+        "k": 62,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_77_4": {
+        "q": 3,
+        "n": 77,
+        "k": 70,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_77_22": {
+        "q": 3,
+        "n": 77,
+        "k": 31,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_77_11": {
+        "q": 3,
+        "n": 77,
+        "k": 52,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_10": {
+        "q": 3,
+        "n": 80,
+        "k": 57,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_8": {
+        "q": 3,
+        "n": 80,
+        "k": 64,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_14": {
+        "q": 3,
+        "n": 80,
+        "k": 49,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_4": {
+        "q": 3,
+        "n": 80,
+        "k": 73,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_80_16": {
+        "q": 3,
+        "n": 80,
+        "k": 44,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_2": {
+        "q": 3,
+        "n": 80,
+        "k": 79,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_80_5": {
+        "q": 3,
+        "n": 80,
+        "k": 71,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_74_16": {
+        "q": 3,
+        "n": 74,
+        "k": 38,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_20": {
+        "q": 3,
+        "n": 80,
+        "k": 39,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_12": {
+        "q": 3,
+        "n": 80,
+        "k": 53,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_22": {
+        "q": 3,
+        "n": 80,
+        "k": 34,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_6": {
+        "q": 3,
+        "n": 80,
+        "k": 69,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_9": {
+        "q": 3,
+        "n": 80,
+        "k": 59,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_73_18": {
+        "q": 3,
+        "n": 73,
+        "k": 36,
+        "d": 18,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_80_26": {
+        "q": 3,
+        "n": 80,
+        "k": 28,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_15": {
+        "q": 3,
+        "n": 80,
+        "k": 45,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_7": {
+        "q": 3,
+        "n": 80,
+        "k": 65,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_33": {
+        "q": 3,
+        "n": 80,
+        "k": 20,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_42": {
+        "q": 3,
+        "n": 80,
+        "k": 14,
+        "d": 42,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_29": {
+        "q": 3,
+        "n": 80,
+        "k": 25,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_40": {
+        "q": 3,
+        "n": 80,
+        "k": 16,
+        "d": 40,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_18": {
+        "q": 3,
+        "n": 80,
+        "k": 41,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_24": {
+        "q": 3,
+        "n": 80,
+        "k": 32,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_11": {
+        "q": 3,
+        "n": 80,
+        "k": 55,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_80_13": {
+        "q": 3,
+        "n": 80,
+        "k": 50,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_2": {
+        "q": 3,
+        "n": 82,
+        "k": 81,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_82_4": {
+        "q": 3,
+        "n": 82,
+        "k": 75,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_82_10": {
+        "q": 3,
+        "n": 82,
+        "k": 59,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_24": {
+        "q": 3,
+        "n": 82,
+        "k": 34,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_14": {
+        "q": 3,
+        "n": 82,
+        "k": 50,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_12": {
+        "q": 3,
+        "n": 82,
+        "k": 55,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_42": {
+        "q": 3,
+        "n": 82,
+        "k": 16,
+        "d": 42,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_16": {
+        "q": 3,
+        "n": 82,
+        "k": 45,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_22": {
+        "q": 3,
+        "n": 82,
+        "k": 36,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_8": {
+        "q": 3,
+        "n": 82,
+        "k": 66,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_13": {
+        "q": 3,
+        "n": 82,
+        "k": 51,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_20": {
+        "q": 3,
+        "n": 82,
+        "k": 41,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_19": {
+        "q": 3,
+        "n": 82,
+        "k": 42,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_26": {
+        "q": 3,
+        "n": 82,
+        "k": 29,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_15": {
+        "q": 3,
+        "n": 82,
+        "k": 47,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_9": {
+        "q": 3,
+        "n": 82,
+        "k": 61,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_7": {
+        "q": 3,
+        "n": 82,
+        "k": 67,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_45": {
+        "q": 3,
+        "n": 82,
+        "k": 11,
+        "d": 45,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_31": {
+        "q": 3,
+        "n": 82,
+        "k": 22,
+        "d": 31,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_33": {
+        "q": 3,
+        "n": 82,
+        "k": 20,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_21": {
+        "q": 3,
+        "n": 82,
+        "k": 40,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_6": {
+        "q": 3,
+        "n": 82,
+        "k": 71,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_5": {
+        "q": 3,
+        "n": 82,
+        "k": 73,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_28": {
+        "q": 3,
+        "n": 82,
+        "k": 26,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_34": {
+        "q": 3,
+        "n": 82,
+        "k": 19,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_36": {
+        "q": 3,
+        "n": 82,
+        "k": 18,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_82_11": {
+        "q": 3,
+        "n": 82,
+        "k": 56,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_85_10": {
+        "q": 3,
+        "n": 85,
+        "k": 61,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_85_21": {
+        "q": 3,
+        "n": 85,
+        "k": 42,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_85_5": {
+        "q": 3,
+        "n": 85,
+        "k": 76,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_85_4": {
+        "q": 3,
+        "n": 85,
+        "k": 78,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_85_17": {
+        "q": 3,
+        "n": 85,
+        "k": 45,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_85_2": {
+        "q": 3,
+        "n": 85,
+        "k": 84,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_85_18": {
+        "q": 3,
+        "n": 85,
+        "k": 44,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_85_35": {
+        "q": 3,
+        "n": 85,
+        "k": 20,
+        "d": 35,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_2": {
+        "q": 3,
+        "n": 86,
+        "k": 85,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_86_4": {
+        "q": 3,
+        "n": 86,
+        "k": 79,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_88_4": {
+        "q": 3,
+        "n": 88,
+        "k": 81,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_88_2": {
+        "q": 3,
+        "n": 88,
+        "k": 87,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_88_16": {
+        "q": 3,
+        "n": 88,
+        "k": 50,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_88_8": {
+        "q": 3,
+        "n": 88,
+        "k": 71,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_88_22": {
+        "q": 3,
+        "n": 88,
+        "k": 42,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_88_11": {
+        "q": 3,
+        "n": 88,
+        "k": 61,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_7": {
+        "q": 3,
+        "n": 91,
+        "k": 75,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_5": {
+        "q": 3,
+        "n": 91,
+        "k": 81,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_91_13": {
+        "q": 3,
+        "n": 91,
+        "k": 58,
+        "d": 13,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_91_14": {
+        "q": 3,
+        "n": 91,
+        "k": 57,
+        "d": 14,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_91_26": {
+        "q": 3,
+        "n": 91,
+        "k": 38,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_10": {
+        "q": 3,
+        "n": 91,
+        "k": 66,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_91_6": {
+        "q": 3,
+        "n": 91,
+        "k": 79,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_12": {
+        "q": 3,
+        "n": 91,
+        "k": 61,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_28": {
+        "q": 3,
+        "n": 91,
+        "k": 31,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_27": {
+        "q": 3,
+        "n": 91,
+        "k": 37,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_18": {
+        "q": 3,
+        "n": 91,
+        "k": 49,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_11": {
+        "q": 3,
+        "n": 91,
+        "k": 64,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_20": {
+        "q": 3,
+        "n": 91,
+        "k": 47,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_4": {
+        "q": 3,
+        "n": 91,
+        "k": 84,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_91_45": {
+        "q": 3,
+        "n": 91,
+        "k": 16,
+        "d": 45,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_8": {
+        "q": 3,
+        "n": 91,
+        "k": 73,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_34": {
+        "q": 3,
+        "n": 91,
+        "k": 24,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_38": {
+        "q": 3,
+        "n": 91,
+        "k": 20,
+        "d": 38,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_23": {
+        "q": 3,
+        "n": 91,
+        "k": 44,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_16": {
+        "q": 3,
+        "n": 91,
+        "k": 52,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_15": {
+        "q": 3,
+        "n": 91,
+        "k": 54,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_19": {
+        "q": 3,
+        "n": 91,
+        "k": 48,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_24": {
+        "q": 3,
+        "n": 91,
+        "k": 43,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_9": {
+        "q": 3,
+        "n": 91,
+        "k": 69,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_42": {
+        "q": 3,
+        "n": 91,
+        "k": 17,
+        "d": 42,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_2": {
+        "q": 3,
+        "n": 91,
+        "k": 90,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_91_35": {
+        "q": 3,
+        "n": 91,
+        "k": 23,
+        "d": 35,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_91_21": {
+        "q": 3,
+        "n": 91,
+        "k": 46,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_92_4": {
+        "q": 3,
+        "n": 92,
+        "k": 85,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_92_8": {
+        "q": 3,
+        "n": 92,
+        "k": 73,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_92_2": {
+        "q": 3,
+        "n": 92,
+        "k": 91,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_92_23": {
+        "q": 3,
+        "n": 92,
+        "k": 45,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_94_2": {
+        "q": 3,
+        "n": 94,
+        "k": 93,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_94_4": {
+        "q": 3,
+        "n": 94,
+        "k": 87,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_95_4": {
+        "q": 3,
+        "n": 95,
+        "k": 88,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_95_2": {
+        "q": 3,
+        "n": 95,
+        "k": 94,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_95_10": {
+        "q": 3,
+        "n": 95,
+        "k": 69,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_95_21": {
+        "q": 3,
+        "n": 95,
+        "k": 49,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_95_39": {
+        "q": 3,
+        "n": 95,
+        "k": 21,
+        "d": 39,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_95_5": {
+        "q": 3,
+        "n": 95,
+        "k": 85,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_98_4": {
+        "q": 3,
+        "n": 98,
+        "k": 91,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_98_14": {
+        "q": 3,
+        "n": 98,
+        "k": 64,
+        "d": 14,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_98_2": {
+        "q": 3,
+        "n": 98,
+        "k": 97,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_98_7": {
+        "q": 3,
+        "n": 98,
+        "k": 81,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_98_29": {
+        "q": 3,
+        "n": 98,
+        "k": 34,
+        "d": 29,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_100_8": {
+        "q": 3,
+        "n": 100,
+        "k": 80,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_100_4": {
+        "q": 3,
+        "n": 100,
+        "k": 93,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_100_2": {
+        "q": 3,
+        "n": 100,
+        "k": 99,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_100_20": {
+        "q": 3,
+        "n": 100,
+        "k": 53,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_100_10": {
+        "q": 3,
+        "n": 100,
+        "k": 74,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_100_40": {
+        "q": 3,
+        "n": 100,
+        "k": 22,
+        "d": 40,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_100_5": {
+        "q": 3,
+        "n": 100,
+        "k": 90,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_100_25": {
+        "q": 3,
+        "n": 100,
+        "k": 48,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_97_24": {
+        "q": 3,
+        "n": 97,
+        "k": 48,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_97_23": {
+        "q": 3,
+        "n": 97,
+        "k": 49,
+        "d": 23,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_22_6": {
+        "q": 3,
+        "n": 22,
+        "k": 14,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_8": {
+        "q": 3,
+        "n": 22,
+        "k": 11,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_9": {
+        "q": 3,
+        "n": 22,
+        "k": 10,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_5": {
+        "q": 3,
+        "n": 22,
+        "k": 15,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_11": {
+        "q": 3,
+        "n": 22,
+        "k": 7,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_3": {
+        "q": 3,
+        "n": 22,
+        "k": 18,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_6": {
+        "q": 3,
+        "n": 24,
+        "k": 16,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_9": {
+        "q": 3,
+        "n": 24,
+        "k": 12,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_10": {
+        "q": 3,
+        "n": 24,
+        "k": 9,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_12": {
+        "q": 3,
+        "n": 24,
+        "k": 7,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_4": {
+        "q": 3,
+        "n": 24,
+        "k": 18,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_24_2": {
+        "q": 3,
+        "n": 24,
+        "k": 23,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_5": {
+        "q": 3,
+        "n": 24,
+        "k": 17,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_3": {
+        "q": 3,
+        "n": 24,
+        "k": 20,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_24_11": {
+        "q": 3,
+        "n": 24,
+        "k": 8,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_7": {
+        "q": 3,
+        "n": 24,
+        "k": 13,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_7": {
+        "q": 3,
+        "n": 22,
+        "k": 12,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_24_1": {
+        "q": 3,
+        "n": 24,
+        "k": 24,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_26_9": {
+        "q": 3,
+        "n": 26,
+        "k": 12,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_13": {
+        "q": 3,
+        "n": 26,
+        "k": 8,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_3": {
+        "q": 3,
+        "n": 26,
+        "k": 22,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_28_6": {
+        "q": 3,
+        "n": 28,
+        "k": 20,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_3": {
+        "q": 3,
+        "n": 28,
+        "k": 24,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_28_15": {
+        "q": 3,
+        "n": 28,
+        "k": 8,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_9": {
+        "q": 3,
+        "n": 28,
+        "k": 14,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_4": {
+        "q": 3,
+        "n": 30,
+        "k": 24,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_6": {
+        "q": 3,
+        "n": 30,
+        "k": 20,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_12": {
+        "q": 3,
+        "n": 30,
+        "k": 12,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_2": {
+        "q": 3,
+        "n": 30,
+        "k": 29,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_14": {
+        "q": 3,
+        "n": 30,
+        "k": 9,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_8": {
+        "q": 3,
+        "n": 30,
+        "k": 16,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_9": {
+        "q": 3,
+        "n": 30,
+        "k": 15,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_10": {
+        "q": 3,
+        "n": 30,
+        "k": 14,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_13": {
+        "q": 3,
+        "n": 30,
+        "k": 10,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_3": {
+        "q": 3,
+        "n": 30,
+        "k": 26,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_5": {
+        "q": 3,
+        "n": 30,
+        "k": 22,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_32_6": {
+        "q": 3,
+        "n": 32,
+        "k": 22,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_11": {
+        "q": 3,
+        "n": 32,
+        "k": 15,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_9": {
+        "q": 3,
+        "n": 32,
+        "k": 17,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_15": {
+        "q": 3,
+        "n": 32,
+        "k": 10,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_5": {
+        "q": 3,
+        "n": 32,
+        "k": 24,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_32_3": {
+        "q": 3,
+        "n": 32,
+        "k": 28,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_32_10": {
+        "q": 3,
+        "n": 32,
+        "k": 16,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_7": {
+        "q": 3,
+        "n": 32,
+        "k": 20,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_12": {
+        "q": 3,
+        "n": 32,
+        "k": 14,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_16": {
+        "q": 3,
+        "n": 32,
+        "k": 8,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_17": {
+        "q": 3,
+        "n": 32,
+        "k": 7,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_10": {
+        "q": 3,
+        "n": 34,
+        "k": 18,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_8": {
+        "q": 3,
+        "n": 34,
+        "k": 20,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_6": {
+        "q": 3,
+        "n": 34,
+        "k": 24,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_14": {
+        "q": 3,
+        "n": 34,
+        "k": 11,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_12": {
+        "q": 3,
+        "n": 34,
+        "k": 16,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_3": {
+        "q": 3,
+        "n": 34,
+        "k": 30,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_34_11": {
+        "q": 3,
+        "n": 34,
+        "k": 17,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_7": {
+        "q": 3,
+        "n": 34,
+        "k": 22,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_34_16": {
+        "q": 3,
+        "n": 34,
+        "k": 10,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_8": {
+        "q": 3,
+        "n": 36,
+        "k": 21,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_9": {
+        "q": 3,
+        "n": 36,
+        "k": 20,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_6": {
+        "q": 3,
+        "n": 36,
+        "k": 26,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_12": {
+        "q": 3,
+        "n": 36,
+        "k": 18,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_2": {
+        "q": 3,
+        "n": 36,
+        "k": 35,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_3": {
+        "q": 3,
+        "n": 36,
+        "k": 32,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_36_4": {
+        "q": 3,
+        "n": 36,
+        "k": 30,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_36_15": {
+        "q": 3,
+        "n": 36,
+        "k": 12,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_14": {
+        "q": 3,
+        "n": 36,
+        "k": 13,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_20": {
+        "q": 3,
+        "n": 36,
+        "k": 7,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_16": {
+        "q": 3,
+        "n": 36,
+        "k": 11,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_7": {
+        "q": 3,
+        "n": 38,
+        "k": 25,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_38_10": {
+        "q": 3,
+        "n": 38,
+        "k": 20,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_12": {
+        "q": 3,
+        "n": 38,
+        "k": 18,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_6": {
+        "q": 3,
+        "n": 38,
+        "k": 28,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_14": {
+        "q": 3,
+        "n": 38,
+        "k": 15,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_8": {
+        "q": 3,
+        "n": 38,
+        "k": 23,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_17": {
+        "q": 3,
+        "n": 38,
+        "k": 12,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_3": {
+        "q": 3,
+        "n": 38,
+        "k": 34,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_13": {
+        "q": 3,
+        "n": 38,
+        "k": 16,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_5": {
+        "q": 3,
+        "n": 38,
+        "k": 30,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_20_3": {
+        "q": 3,
+        "n": 20,
+        "k": 16,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_20_7": {
+        "q": 3,
+        "n": 20,
+        "k": 10,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_20_6": {
+        "q": 3,
+        "n": 20,
+        "k": 12,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_24_13": {
+        "q": 3,
+        "n": 24,
+        "k": 6,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_11": {
+        "q": 3,
+        "n": 28,
+        "k": 11,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_7": {
+        "q": 3,
+        "n": 30,
+        "k": 18,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_15": {
+        "q": 3,
+        "n": 30,
+        "k": 8,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_5": {
+        "q": 3,
+        "n": 34,
+        "k": 26,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_7": {
+        "q": 3,
+        "n": 36,
+        "k": 23,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_5": {
+        "q": 3,
+        "n": 36,
+        "k": 28,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_36_18": {
+        "q": 3,
+        "n": 36,
+        "k": 10,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_18": {
+        "q": 3,
+        "n": 38,
+        "k": 11,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_15": {
+        "q": 3,
+        "n": 38,
+        "k": 14,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_11": {
+        "q": 3,
+        "n": 38,
+        "k": 19,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_12": {
+        "q": 3,
+        "n": 40,
+        "k": 20,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_3": {
+        "q": 3,
+        "n": 40,
+        "k": 36,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_13": {
+        "q": 3,
+        "n": 40,
+        "k": 18,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_18": {
+        "q": 3,
+        "n": 40,
+        "k": 12,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_9": {
+        "q": 3,
+        "n": 40,
+        "k": 24,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_20": {
+        "q": 3,
+        "n": 40,
+        "k": 9,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_18": {
+        "q": 3,
+        "n": 42,
+        "k": 13,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_2": {
+        "q": 3,
+        "n": 42,
+        "k": 41,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_6": {
+        "q": 3,
+        "n": 42,
+        "k": 31,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_42_14": {
+        "q": 3,
+        "n": 42,
+        "k": 19,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_4": {
+        "q": 3,
+        "n": 42,
+        "k": 36,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_10": {
+        "q": 3,
+        "n": 42,
+        "k": 23,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_8": {
+        "q": 3,
+        "n": 42,
+        "k": 27,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_16": {
+        "q": 3,
+        "n": 42,
+        "k": 14,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_9": {
+        "q": 3,
+        "n": 42,
+        "k": 25,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_7": {
+        "q": 3,
+        "n": 42,
+        "k": 29,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_12": {
+        "q": 3,
+        "n": 22,
+        "k": 6,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_14": {
+        "q": 3,
+        "n": 26,
+        "k": 7,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_13": {
+        "q": 3,
+        "n": 32,
+        "k": 11,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_11": {
+        "q": 3,
+        "n": 30,
+        "k": 13,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_16": {
+        "q": 3,
+        "n": 30,
+        "k": 7,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_13": {
+        "q": 3,
+        "n": 36,
+        "k": 14,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_13": {
+        "q": 3,
+        "n": 34,
+        "k": 12,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_18": {
+        "q": 3,
+        "n": 34,
+        "k": 8,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_1": {
+        "q": 3,
+        "n": 30,
+        "k": 30,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_38_9": {
+        "q": 3,
+        "n": 38,
+        "k": 22,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_20": {
+        "q": 3,
+        "n": 38,
+        "k": 8,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_7": {
+        "q": 3,
+        "n": 40,
+        "k": 27,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_40_19": {
+        "q": 3,
+        "n": 40,
+        "k": 10,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_15": {
+        "q": 3,
+        "n": 40,
+        "k": 16,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_12": {
+        "q": 3,
+        "n": 42,
+        "k": 21,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_21": {
+        "q": 3,
+        "n": 42,
+        "k": 10,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_15": {
+        "q": 3,
+        "n": 42,
+        "k": 18,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_5": {
+        "q": 3,
+        "n": 42,
+        "k": 33,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_42_19": {
+        "q": 3,
+        "n": 42,
+        "k": 11,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_1": {
+        "q": 3,
+        "n": 42,
+        "k": 42,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_42_3": {
+        "q": 3,
+        "n": 42,
+        "k": 37,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_42_11": {
+        "q": 3,
+        "n": 42,
+        "k": 22,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_22": {
+        "q": 3,
+        "n": 42,
+        "k": 8,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_20_5": {
+        "q": 3,
+        "n": 20,
+        "k": 13,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_44_16": {
+        "q": 3,
+        "n": 44,
+        "k": 16,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_12": {
+        "q": 3,
+        "n": 44,
+        "k": 23,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_6": {
+        "q": 3,
+        "n": 44,
+        "k": 33,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_9": {
+        "q": 3,
+        "n": 44,
+        "k": 26,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_13": {
+        "q": 3,
+        "n": 44,
+        "k": 22,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_14": {
+        "q": 3,
+        "n": 44,
+        "k": 21,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_17": {
+        "q": 3,
+        "n": 44,
+        "k": 15,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_23": {
+        "q": 3,
+        "n": 44,
+        "k": 9,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_18": {
+        "q": 3,
+        "n": 44,
+        "k": 14,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_5": {
+        "q": 3,
+        "n": 44,
+        "k": 35,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_44_3": {
+        "q": 3,
+        "n": 44,
+        "k": 39,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_44_21": {
+        "q": 3,
+        "n": 44,
+        "k": 11,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_7": {
+        "q": 3,
+        "n": 44,
+        "k": 30,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_44_15": {
+        "q": 3,
+        "n": 44,
+        "k": 20,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_16": {
+        "q": 3,
+        "n": 46,
+        "k": 18,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_10": {
+        "q": 3,
+        "n": 46,
+        "k": 26,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_18": {
+        "q": 3,
+        "n": 46,
+        "k": 16,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_6": {
+        "q": 3,
+        "n": 46,
+        "k": 35,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_46_13": {
+        "q": 3,
+        "n": 46,
+        "k": 24,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_8": {
+        "q": 3,
+        "n": 46,
+        "k": 30,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_14": {
+        "q": 3,
+        "n": 46,
+        "k": 23,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_23": {
+        "q": 3,
+        "n": 46,
+        "k": 10,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_3": {
+        "q": 3,
+        "n": 46,
+        "k": 41,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_46_17": {
+        "q": 3,
+        "n": 46,
+        "k": 17,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_5": {
+        "q": 3,
+        "n": 46,
+        "k": 37,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_15": {
+        "q": 3,
+        "n": 46,
+        "k": 22,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_24": {
+        "q": 3,
+        "n": 46,
+        "k": 9,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_21": {
+        "q": 3,
+        "n": 46,
+        "k": 12,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_9": {
+        "q": 3,
+        "n": 46,
+        "k": 28,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_19": {
+        "q": 3,
+        "n": 46,
+        "k": 13,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_7": {
+        "q": 3,
+        "n": 46,
+        "k": 32,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_16": {
+        "q": 3,
+        "n": 48,
+        "k": 20,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_2": {
+        "q": 3,
+        "n": 48,
+        "k": 47,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_8": {
+        "q": 3,
+        "n": 48,
+        "k": 32,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_48_23": {
+        "q": 3,
+        "n": 48,
+        "k": 11,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_4": {
+        "q": 3,
+        "n": 48,
+        "k": 42,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_48_6": {
+        "q": 3,
+        "n": 48,
+        "k": 37,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_7": {
+        "q": 3,
+        "n": 48,
+        "k": 34,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_48_11": {
+        "q": 3,
+        "n": 48,
+        "k": 26,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_15": {
+        "q": 3,
+        "n": 48,
+        "k": 24,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_5": {
+        "q": 3,
+        "n": 48,
+        "k": 39,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_10": {
+        "q": 3,
+        "n": 48,
+        "k": 28,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_32_18": {
+        "q": 3,
+        "n": 32,
+        "k": 6,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_1": {
+        "q": 3,
+        "n": 32,
+        "k": 32,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_34_21": {
+        "q": 3,
+        "n": 34,
+        "k": 5,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_17": {
+        "q": 3,
+        "n": 34,
+        "k": 9,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_34_1": {
+        "q": 3,
+        "n": 34,
+        "k": 34,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_34_19": {
+        "q": 3,
+        "n": 34,
+        "k": 6,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_38_1": {
+        "q": 3,
+        "n": 38,
+        "k": 38,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_38_22": {
+        "q": 3,
+        "n": 38,
+        "k": 6,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_22": {
+        "q": 3,
+        "n": 40,
+        "k": 7,
+        "d": 22,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_40_21": {
+        "q": 3,
+        "n": 40,
+        "k": 8,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_13": {
+        "q": 3,
+        "n": 42,
+        "k": 20,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_26_1": {
+        "q": 3,
+        "n": 26,
+        "k": 26,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_44_19": {
+        "q": 3,
+        "n": 44,
+        "k": 12,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_44_24": {
+        "q": 3,
+        "n": 44,
+        "k": 8,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_46_26": {
+        "q": 3,
+        "n": 46,
+        "k": 7,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_19": {
+        "q": 3,
+        "n": 48,
+        "k": 14,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_12": {
+        "q": 3,
+        "n": 48,
+        "k": 25,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_18": {
+        "q": 3,
+        "n": 48,
+        "k": 18,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_9": {
+        "q": 3,
+        "n": 48,
+        "k": 29,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_24": {
+        "q": 3,
+        "n": 48,
+        "k": 10,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_21": {
+        "q": 3,
+        "n": 48,
+        "k": 13,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_17": {
+        "q": 3,
+        "n": 48,
+        "k": 19,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_3": {
+        "q": 3,
+        "n": 48,
+        "k": 43,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_48_27": {
+        "q": 3,
+        "n": 48,
+        "k": 8,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_29": {
+        "q": 3,
+        "n": 48,
+        "k": 6,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_48_25": {
+        "q": 3,
+        "n": 48,
+        "k": 9,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_18": {
+        "q": 3,
+        "n": 50,
+        "k": 20,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_16": {
+        "q": 3,
+        "n": 50,
+        "k": 22,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_6": {
+        "q": 3,
+        "n": 50,
+        "k": 39,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_8": {
+        "q": 3,
+        "n": 50,
+        "k": 34,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_13": {
+        "q": 3,
+        "n": 50,
+        "k": 26,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_3": {
+        "q": 3,
+        "n": 50,
+        "k": 45,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_30": {
+        "q": 3,
+        "n": 50,
+        "k": 6,
+        "d": 30,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_50_24": {
+        "q": 3,
+        "n": 50,
+        "k": 11,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_23": {
+        "q": 3,
+        "n": 50,
+        "k": 12,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_9": {
+        "q": 3,
+        "n": 50,
+        "k": 31,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_14": {
+        "q": 3,
+        "n": 50,
+        "k": 25,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_11": {
+        "q": 3,
+        "n": 50,
+        "k": 27,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_21": {
+        "q": 3,
+        "n": 50,
+        "k": 13,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_15": {
+        "q": 3,
+        "n": 50,
+        "k": 24,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_17": {
+        "q": 3,
+        "n": 50,
+        "k": 21,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_19": {
+        "q": 3,
+        "n": 50,
+        "k": 15,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_7": {
+        "q": 3,
+        "n": 50,
+        "k": 36,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_50_27": {
+        "q": 3,
+        "n": 50,
+        "k": 9,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_11": {
+        "q": 3,
+        "n": 52,
+        "k": 29,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_3": {
+        "q": 3,
+        "n": 52,
+        "k": 47,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_17": {
+        "q": 3,
+        "n": 52,
+        "k": 23,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_18": {
+        "q": 3,
+        "n": 52,
+        "k": 22,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_19": {
+        "q": 3,
+        "n": 52,
+        "k": 17,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_29": {
+        "q": 3,
+        "n": 52,
+        "k": 8,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_22": {
+        "q": 3,
+        "n": 52,
+        "k": 14,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_23": {
+        "q": 3,
+        "n": 52,
+        "k": 13,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_27": {
+        "q": 3,
+        "n": 52,
+        "k": 10,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_21": {
+        "q": 3,
+        "n": 52,
+        "k": 15,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_10": {
+        "q": 3,
+        "n": 54,
+        "k": 34,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_21": {
+        "q": 3,
+        "n": 54,
+        "k": 17,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_4": {
+        "q": 3,
+        "n": 54,
+        "k": 48,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_12": {
+        "q": 3,
+        "n": 54,
+        "k": 30,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_2": {
+        "q": 3,
+        "n": 54,
+        "k": 53,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_6": {
+        "q": 3,
+        "n": 54,
+        "k": 43,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_54_8": {
+        "q": 3,
+        "n": 54,
+        "k": 38,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_13": {
+        "q": 3,
+        "n": 54,
+        "k": 29,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_19": {
+        "q": 3,
+        "n": 54,
+        "k": 18,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_18": {
+        "q": 3,
+        "n": 54,
+        "k": 24,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_14": {
+        "q": 3,
+        "n": 54,
+        "k": 28,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_24": {
+        "q": 3,
+        "n": 54,
+        "k": 14,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_23": {
+        "q": 3,
+        "n": 54,
+        "k": 15,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_7": {
+        "q": 3,
+        "n": 54,
+        "k": 39,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_30": {
+        "q": 3,
+        "n": 54,
+        "k": 8,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_11": {
+        "q": 3,
+        "n": 54,
+        "k": 31,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_54_5": {
+        "q": 3,
+        "n": 54,
+        "k": 45,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_25": {
+        "q": 3,
+        "n": 54,
+        "k": 12,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_16": {
+        "q": 3,
+        "n": 54,
+        "k": 26,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_3": {
+        "q": 3,
+        "n": 54,
+        "k": 49,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_29": {
+        "q": 3,
+        "n": 54,
+        "k": 9,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_34": {
+        "q": 3,
+        "n": 54,
+        "k": 6,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_27": {
+        "q": 3,
+        "n": 54,
+        "k": 11,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_17": {
+        "q": 3,
+        "n": 54,
+        "k": 25,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_15": {
+        "q": 3,
+        "n": 54,
+        "k": 27,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_6": {
+        "q": 3,
+        "n": 56,
+        "k": 45,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_56_18": {
+        "q": 3,
+        "n": 56,
+        "k": 26,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_22": {
+        "q": 3,
+        "n": 56,
+        "k": 16,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_15": {
+        "q": 3,
+        "n": 56,
+        "k": 29,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_9": {
+        "q": 3,
+        "n": 56,
+        "k": 37,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_17": {
+        "q": 3,
+        "n": 56,
+        "k": 27,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_27": {
+        "q": 3,
+        "n": 56,
+        "k": 12,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_29": {
+        "q": 3,
+        "n": 56,
+        "k": 10,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_5": {
+        "q": 3,
+        "n": 56,
+        "k": 47,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_56_11": {
+        "q": 3,
+        "n": 56,
+        "k": 33,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_56_30": {
+        "q": 3,
+        "n": 56,
+        "k": 9,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_56_3": {
+        "q": 3,
+        "n": 56,
+        "k": 51,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_56_19": {
+        "q": 3,
+        "n": 56,
+        "k": 20,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_6": {
+        "q": 3,
+        "n": 58,
+        "k": 47,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_58_5": {
+        "q": 3,
+        "n": 58,
+        "k": 49,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_58_18": {
+        "q": 3,
+        "n": 58,
+        "k": 28,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_8": {
+        "q": 3,
+        "n": 58,
+        "k": 42,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_17": {
+        "q": 3,
+        "n": 58,
+        "k": 29,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_16": {
+        "q": 3,
+        "n": 58,
+        "k": 30,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_7": {
+        "q": 3,
+        "n": 58,
+        "k": 43,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_20": {
+        "q": 3,
+        "n": 58,
+        "k": 20,
+        "d": 20,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_58_12": {
+        "q": 3,
+        "n": 58,
+        "k": 32,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_13": {
+        "q": 3,
+        "n": 58,
+        "k": 31,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_10": {
+        "q": 3,
+        "n": 58,
+        "k": 38,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_26": {
+        "q": 3,
+        "n": 58,
+        "k": 13,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_29": {
+        "q": 3,
+        "n": 58,
+        "k": 11,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_9": {
+        "q": 3,
+        "n": 58,
+        "k": 39,
+        "d": 9,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_58_3": {
+        "q": 3,
+        "n": 58,
+        "k": 53,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_30": {
+        "q": 3,
+        "n": 58,
+        "k": 10,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_22": {
+        "q": 3,
+        "n": 58,
+        "k": 17,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_19": {
+        "q": 3,
+        "n": 58,
+        "k": 21,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_34": {
+        "q": 3,
+        "n": 58,
+        "k": 7,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_27": {
+        "q": 3,
+        "n": 58,
+        "k": 12,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_24": {
+        "q": 3,
+        "n": 58,
+        "k": 16,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_11": {
+        "q": 3,
+        "n": 58,
+        "k": 35,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_33": {
+        "q": 3,
+        "n": 58,
+        "k": 8,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_9": {
+        "q": 3,
+        "n": 60,
+        "k": 41,
+        "d": 9,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_18": {
+        "q": 3,
+        "n": 60,
+        "k": 30,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_14": {
+        "q": 3,
+        "n": 60,
+        "k": 32,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_2": {
+        "q": 3,
+        "n": 60,
+        "k": 59,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_4": {
+        "q": 3,
+        "n": 60,
+        "k": 53,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_12": {
+        "q": 3,
+        "n": 60,
+        "k": 34,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_6": {
+        "q": 3,
+        "n": 60,
+        "k": 49,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_5": {
+        "q": 3,
+        "n": 60,
+        "k": 51,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_24": {
+        "q": 3,
+        "n": 60,
+        "k": 17,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_28": {
+        "q": 3,
+        "n": 60,
+        "k": 12,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_8": {
+        "q": 3,
+        "n": 60,
+        "k": 44,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_22": {
+        "q": 3,
+        "n": 60,
+        "k": 19,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_20": {
+        "q": 3,
+        "n": 60,
+        "k": 22,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_27": {
+        "q": 3,
+        "n": 60,
+        "k": 14,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_10": {
+        "q": 3,
+        "n": 60,
+        "k": 40,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_3": {
+        "q": 3,
+        "n": 60,
+        "k": 55,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_36": {
+        "q": 3,
+        "n": 60,
+        "k": 7,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_7": {
+        "q": 3,
+        "n": 60,
+        "k": 45,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_30": {
+        "q": 3,
+        "n": 60,
+        "k": 11,
+        "d": 30,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_11": {
+        "q": 3,
+        "n": 60,
+        "k": 37,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_21": {
+        "q": 3,
+        "n": 60,
+        "k": 21,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_19": {
+        "q": 3,
+        "n": 60,
+        "k": 23,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_31": {
+        "q": 3,
+        "n": 60,
+        "k": 10,
+        "d": 31,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_1": {
+        "q": 3,
+        "n": 60,
+        "k": 60,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_60_15": {
+        "q": 3,
+        "n": 60,
+        "k": 31,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_60_25": {
+        "q": 3,
+        "n": 60,
+        "k": 15,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_18": {
+        "q": 3,
+        "n": 62,
+        "k": 30,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_8": {
+        "q": 3,
+        "n": 62,
+        "k": 46,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_62_10": {
+        "q": 3,
+        "n": 62,
+        "k": 41,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_62_6": {
+        "q": 3,
+        "n": 62,
+        "k": 51,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_20": {
+        "q": 3,
+        "n": 62,
+        "k": 23,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_12": {
+        "q": 3,
+        "n": 62,
+        "k": 36,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_26": {
+        "q": 3,
+        "n": 62,
+        "k": 15,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_16": {
+        "q": 3,
+        "n": 62,
+        "k": 32,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_33": {
+        "q": 3,
+        "n": 62,
+        "k": 10,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_22": {
+        "q": 3,
+        "n": 62,
+        "k": 20,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_24": {
+        "q": 3,
+        "n": 62,
+        "k": 18,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_21": {
+        "q": 3,
+        "n": 62,
+        "k": 22,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_28": {
+        "q": 3,
+        "n": 62,
+        "k": 13,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_23": {
+        "q": 3,
+        "n": 62,
+        "k": 19,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_7": {
+        "q": 3,
+        "n": 62,
+        "k": 47,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_27": {
+        "q": 3,
+        "n": 62,
+        "k": 14,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_13": {
+        "q": 3,
+        "n": 62,
+        "k": 33,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_11": {
+        "q": 3,
+        "n": 62,
+        "k": 39,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_19": {
+        "q": 3,
+        "n": 62,
+        "k": 24,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_3": {
+        "q": 3,
+        "n": 62,
+        "k": 57,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_5": {
+        "q": 3,
+        "n": 62,
+        "k": 53,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_25": {
+        "q": 3,
+        "n": 62,
+        "k": 16,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_30": {
+        "q": 3,
+        "n": 62,
+        "k": 12,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_34": {
+        "q": 3,
+        "n": 62,
+        "k": 9,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_7": {
+        "q": 3,
+        "n": 64,
+        "k": 49,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_20": {
+        "q": 3,
+        "n": 64,
+        "k": 25,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_14": {
+        "q": 3,
+        "n": 64,
+        "k": 33,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_10": {
+        "q": 3,
+        "n": 64,
+        "k": 42,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_64_12": {
+        "q": 3,
+        "n": 64,
+        "k": 38,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_28": {
+        "q": 3,
+        "n": 64,
+        "k": 14,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_13": {
+        "q": 3,
+        "n": 64,
+        "k": 34,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_30": {
+        "q": 3,
+        "n": 64,
+        "k": 13,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_6": {
+        "q": 3,
+        "n": 64,
+        "k": 53,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_64_5": {
+        "q": 3,
+        "n": 64,
+        "k": 55,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_64_11": {
+        "q": 3,
+        "n": 64,
+        "k": 41,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_3": {
+        "q": 3,
+        "n": 64,
+        "k": 59,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_26": {
+        "q": 3,
+        "n": 64,
+        "k": 17,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_33": {
+        "q": 3,
+        "n": 64,
+        "k": 11,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_24": {
+        "q": 3,
+        "n": 64,
+        "k": 20,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_22": {
+        "q": 3,
+        "n": 64,
+        "k": 21,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_34": {
+        "q": 3,
+        "n": 64,
+        "k": 10,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_27": {
+        "q": 3,
+        "n": 64,
+        "k": 16,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_21": {
+        "q": 3,
+        "n": 64,
+        "k": 23,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_29": {
+        "q": 3,
+        "n": 50,
+        "k": 7,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_52_1": {
+        "q": 3,
+        "n": 52,
+        "k": 52,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_52_25": {
+        "q": 3,
+        "n": 52,
+        "k": 11,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_58_31": {
+        "q": 3,
+        "n": 58,
+        "k": 9,
+        "d": 31,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_62_36": {
+        "q": 3,
+        "n": 62,
+        "k": 7,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_64_9": {
+        "q": 3,
+        "n": 64,
+        "k": 43,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_6": {
+        "q": 3,
+        "n": 66,
+        "k": 55,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_18": {
+        "q": 3,
+        "n": 66,
+        "k": 32,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_10": {
+        "q": 3,
+        "n": 66,
+        "k": 44,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_66_2": {
+        "q": 3,
+        "n": 66,
+        "k": 65,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_24": {
+        "q": 3,
+        "n": 66,
+        "k": 21,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_11": {
+        "q": 3,
+        "n": 66,
+        "k": 43,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_66_19": {
+        "q": 3,
+        "n": 66,
+        "k": 27,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_12": {
+        "q": 3,
+        "n": 66,
+        "k": 39,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_8": {
+        "q": 3,
+        "n": 66,
+        "k": 50,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_66_4": {
+        "q": 3,
+        "n": 66,
+        "k": 59,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_66_14": {
+        "q": 3,
+        "n": 66,
+        "k": 35,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_3": {
+        "q": 3,
+        "n": 66,
+        "k": 61,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_66_33": {
+        "q": 3,
+        "n": 66,
+        "k": 12,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_20": {
+        "q": 3,
+        "n": 66,
+        "k": 26,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_9": {
+        "q": 3,
+        "n": 66,
+        "k": 45,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_7": {
+        "q": 3,
+        "n": 66,
+        "k": 51,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_66_27": {
+        "q": 3,
+        "n": 66,
+        "k": 18,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_5": {
+        "q": 3,
+        "n": 66,
+        "k": 57,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_28": {
+        "q": 3,
+        "n": 66,
+        "k": 16,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_22": {
+        "q": 3,
+        "n": 66,
+        "k": 22,
+        "d": 22,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_66_29": {
+        "q": 3,
+        "n": 66,
+        "k": 15,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_30": {
+        "q": 3,
+        "n": 66,
+        "k": 14,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_36": {
+        "q": 3,
+        "n": 66,
+        "k": 10,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_14": {
+        "q": 3,
+        "n": 68,
+        "k": 37,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_23": {
+        "q": 3,
+        "n": 68,
+        "k": 23,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_18": {
+        "q": 3,
+        "n": 68,
+        "k": 32,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_6": {
+        "q": 3,
+        "n": 68,
+        "k": 57,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_68_3": {
+        "q": 3,
+        "n": 68,
+        "k": 63,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_30": {
+        "q": 3,
+        "n": 68,
+        "k": 16,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_10": {
+        "q": 3,
+        "n": 68,
+        "k": 46,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_33": {
+        "q": 3,
+        "n": 68,
+        "k": 12,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_27": {
+        "q": 3,
+        "n": 68,
+        "k": 18,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_16": {
+        "q": 3,
+        "n": 68,
+        "k": 34,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_24": {
+        "q": 3,
+        "n": 68,
+        "k": 22,
+        "d": 24,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_68_12": {
+        "q": 3,
+        "n": 68,
+        "k": 41,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_20": {
+        "q": 3,
+        "n": 68,
+        "k": 28,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_13": {
+        "q": 3,
+        "n": 68,
+        "k": 38,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_7": {
+        "q": 3,
+        "n": 68,
+        "k": 53,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_32": {
+        "q": 3,
+        "n": 68,
+        "k": 13,
+        "d": 32,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_35": {
+        "q": 3,
+        "n": 68,
+        "k": 11,
+        "d": 35,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_9": {
+        "q": 3,
+        "n": 68,
+        "k": 47,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_11": {
+        "q": 3,
+        "n": 68,
+        "k": 45,
+        "d": 11,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_68_5": {
+        "q": 3,
+        "n": 68,
+        "k": 59,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_68_36": {
+        "q": 3,
+        "n": 68,
+        "k": 10,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_2": {
+        "q": 3,
+        "n": 72,
+        "k": 71,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_18": {
+        "q": 3,
+        "n": 72,
+        "k": 36,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_32": {
+        "q": 3,
+        "n": 72,
+        "k": 16,
+        "d": 32,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_6": {
+        "q": 3,
+        "n": 72,
+        "k": 61,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_20": {
+        "q": 3,
+        "n": 72,
+        "k": 31,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_7": {
+        "q": 3,
+        "n": 72,
+        "k": 57,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_10": {
+        "q": 3,
+        "n": 72,
+        "k": 49,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_16": {
+        "q": 3,
+        "n": 72,
+        "k": 37,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_4": {
+        "q": 3,
+        "n": 72,
+        "k": 65,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_8": {
+        "q": 3,
+        "n": 72,
+        "k": 56,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_14": {
+        "q": 3,
+        "n": 72,
+        "k": 41,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_28": {
+        "q": 3,
+        "n": 72,
+        "k": 19,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_5": {
+        "q": 3,
+        "n": 72,
+        "k": 63,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_72_12": {
+        "q": 3,
+        "n": 72,
+        "k": 45,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_26": {
+        "q": 3,
+        "n": 72,
+        "k": 22,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_36": {
+        "q": 3,
+        "n": 72,
+        "k": 12,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_22": {
+        "q": 3,
+        "n": 72,
+        "k": 26,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_24": {
+        "q": 3,
+        "n": 72,
+        "k": 25,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_34": {
+        "q": 3,
+        "n": 72,
+        "k": 14,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_30": {
+        "q": 3,
+        "n": 72,
+        "k": 17,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_9": {
+        "q": 3,
+        "n": 72,
+        "k": 51,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_29": {
+        "q": 3,
+        "n": 72,
+        "k": 18,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_3": {
+        "q": 3,
+        "n": 72,
+        "k": 67,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_72_35": {
+        "q": 3,
+        "n": 72,
+        "k": 13,
+        "d": 35,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_16": {
+        "q": 3,
+        "n": 70,
+        "k": 36,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_26": {
+        "q": 3,
+        "n": 70,
+        "k": 20,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_12": {
+        "q": 3,
+        "n": 70,
+        "k": 43,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_18": {
+        "q": 3,
+        "n": 70,
+        "k": 34,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_39": {
+        "q": 3,
+        "n": 70,
+        "k": 9,
+        "d": 39,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_22": {
+        "q": 3,
+        "n": 70,
+        "k": 25,
+        "d": 22,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_70_6": {
+        "q": 3,
+        "n": 70,
+        "k": 59,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_70_35": {
+        "q": 3,
+        "n": 70,
+        "k": 12,
+        "d": 35,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_11": {
+        "q": 3,
+        "n": 70,
+        "k": 45,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_30": {
+        "q": 3,
+        "n": 70,
+        "k": 16,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_13": {
+        "q": 3,
+        "n": 70,
+        "k": 40,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_24": {
+        "q": 3,
+        "n": 70,
+        "k": 23,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_23": {
+        "q": 3,
+        "n": 70,
+        "k": 24,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_19": {
+        "q": 3,
+        "n": 70,
+        "k": 30,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_27": {
+        "q": 3,
+        "n": 70,
+        "k": 19,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_22_1": {
+        "q": 3,
+        "n": 22,
+        "k": 22,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_25_8": {
+        "q": 3,
+        "n": 25,
+        "k": 13,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_3": {
+        "q": 3,
+        "n": 25,
+        "k": 21,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_25_2": {
+        "q": 3,
+        "n": 25,
+        "k": 24,
+        "d": 2,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_25_4": {
+        "q": 3,
+        "n": 25,
+        "k": 19,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_9": {
+        "q": 3,
+        "n": 25,
+        "k": 12,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_13": {
+        "q": 3,
+        "n": 25,
+        "k": 7,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_7": {
+        "q": 3,
+        "n": 25,
+        "k": 14,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_6": {
+        "q": 3,
+        "n": 25,
+        "k": 17,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_14": {
+        "q": 3,
+        "n": 25,
+        "k": 6,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_12": {
+        "q": 3,
+        "n": 25,
+        "k": 8,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_17": {
+        "q": 3,
+        "n": 30,
+        "k": 6,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_8": {
+        "q": 3,
+        "n": 35,
+        "k": 21,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_9": {
+        "q": 3,
+        "n": 35,
+        "k": 19,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_12": {
+        "q": 3,
+        "n": 35,
+        "k": 17,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_6": {
+        "q": 3,
+        "n": 35,
+        "k": 25,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_3": {
+        "q": 3,
+        "n": 35,
+        "k": 31,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_15": {
+        "q": 3,
+        "n": 35,
+        "k": 11,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_13": {
+        "q": 3,
+        "n": 35,
+        "k": 13,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_17": {
+        "q": 3,
+        "n": 35,
+        "k": 10,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_40_24": {
+        "q": 3,
+        "n": 40,
+        "k": 6,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_4": {
+        "q": 3,
+        "n": 45,
+        "k": 39,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_20": {
+        "q": 3,
+        "n": 45,
+        "k": 12,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_15": {
+        "q": 3,
+        "n": 45,
+        "k": 21,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_10": {
+        "q": 3,
+        "n": 45,
+        "k": 25,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_45_5": {
+        "q": 3,
+        "n": 45,
+        "k": 36,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_45_12": {
+        "q": 3,
+        "n": 45,
+        "k": 24,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_6": {
+        "q": 3,
+        "n": 45,
+        "k": 34,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_7": {
+        "q": 3,
+        "n": 45,
+        "k": 31,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_45_9": {
+        "q": 3,
+        "n": 45,
+        "k": 27,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_14": {
+        "q": 3,
+        "n": 45,
+        "k": 22,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_25": {
+        "q": 3,
+        "n": 45,
+        "k": 7,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_13": {
+        "q": 3,
+        "n": 45,
+        "k": 23,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_8": {
+        "q": 3,
+        "n": 45,
+        "k": 29,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_2": {
+        "q": 3,
+        "n": 45,
+        "k": 44,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_3": {
+        "q": 3,
+        "n": 45,
+        "k": 40,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_17": {
+        "q": 3,
+        "n": 45,
+        "k": 16,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_22": {
+        "q": 3,
+        "n": 45,
+        "k": 10,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_16": {
+        "q": 3,
+        "n": 45,
+        "k": 17,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_24": {
+        "q": 3,
+        "n": 45,
+        "k": 9,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_21": {
+        "q": 3,
+        "n": 45,
+        "k": 11,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_6": {
+        "q": 3,
+        "n": 21,
+        "k": 13,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_5": {
+        "q": 3,
+        "n": 21,
+        "k": 14,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_9": {
+        "q": 3,
+        "n": 21,
+        "k": 9,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_7": {
+        "q": 3,
+        "n": 21,
+        "k": 11,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_4": {
+        "q": 3,
+        "n": 21,
+        "k": 15,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_21_8": {
+        "q": 3,
+        "n": 21,
+        "k": 10,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_10": {
+        "q": 3,
+        "n": 21,
+        "k": 7,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_18": {
+        "q": 3,
+        "n": 35,
+        "k": 9,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_33_11": {
+        "q": 3,
+        "n": 33,
+        "k": 16,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_33_12": {
+        "q": 3,
+        "n": 33,
+        "k": 15,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_33_8": {
+        "q": 3,
+        "n": 33,
+        "k": 19,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_33_9": {
+        "q": 3,
+        "n": 33,
+        "k": 18,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_33_13": {
+        "q": 3,
+        "n": 33,
+        "k": 12,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_33_15": {
+        "q": 3,
+        "n": 33,
+        "k": 10,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_33_10": {
+        "q": 3,
+        "n": 33,
+        "k": 17,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_28_17": {
+        "q": 3,
+        "n": 28,
+        "k": 5,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_66_38": {
+        "q": 3,
+        "n": 66,
+        "k": 8,
+        "d": 38,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_68_38": {
+        "q": 3,
+        "n": 68,
+        "k": 9,
+        "d": 38,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_21": {
+        "q": 3,
+        "n": 70,
+        "k": 28,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_9": {
+        "q": 3,
+        "n": 70,
+        "k": 49,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_29": {
+        "q": 3,
+        "n": 70,
+        "k": 17,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_70_32": {
+        "q": 3,
+        "n": 70,
+        "k": 14,
+        "d": 32,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_21": {
+        "q": 3,
+        "n": 72,
+        "k": 30,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_19": {
+        "q": 3,
+        "n": 72,
+        "k": 32,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_13": {
+        "q": 3,
+        "n": 72,
+        "k": 42,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_72_15": {
+        "q": 3,
+        "n": 72,
+        "k": 38,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_23": {
+        "q": 3,
+        "n": 76,
+        "k": 29,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_6": {
+        "q": 3,
+        "n": 76,
+        "k": 65,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_10": {
+        "q": 3,
+        "n": 76,
+        "k": 53,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_26": {
+        "q": 3,
+        "n": 76,
+        "k": 24,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_14": {
+        "q": 3,
+        "n": 76,
+        "k": 45,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_5": {
+        "q": 3,
+        "n": 76,
+        "k": 67,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_13": {
+        "q": 3,
+        "n": 76,
+        "k": 46,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_16": {
+        "q": 3,
+        "n": 76,
+        "k": 40,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_22": {
+        "q": 3,
+        "n": 76,
+        "k": 30,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_12": {
+        "q": 3,
+        "n": 76,
+        "k": 49,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_25": {
+        "q": 3,
+        "n": 76,
+        "k": 25,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_32": {
+        "q": 3,
+        "n": 76,
+        "k": 18,
+        "d": 32,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_28": {
+        "q": 3,
+        "n": 76,
+        "k": 22,
+        "d": 28,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_38": {
+        "q": 3,
+        "n": 76,
+        "k": 14,
+        "d": 38,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_29": {
+        "q": 3,
+        "n": 76,
+        "k": 21,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_40": {
+        "q": 3,
+        "n": 76,
+        "k": 12,
+        "d": 40,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_30": {
+        "q": 3,
+        "n": 76,
+        "k": 20,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_76_36": {
+        "q": 3,
+        "n": 76,
+        "k": 16,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_6": {
+        "q": 3,
+        "n": 84,
+        "k": 73,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_10": {
+        "q": 3,
+        "n": 84,
+        "k": 60,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_2": {
+        "q": 3,
+        "n": 84,
+        "k": 83,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_8": {
+        "q": 3,
+        "n": 84,
+        "k": 67,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_4": {
+        "q": 3,
+        "n": 84,
+        "k": 77,
+        "d": 4,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_42": {
+        "q": 3,
+        "n": 84,
+        "k": 16,
+        "d": 42,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_14": {
+        "q": 3,
+        "n": 84,
+        "k": 52,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_16": {
+        "q": 3,
+        "n": 84,
+        "k": 47,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_21": {
+        "q": 3,
+        "n": 84,
+        "k": 42,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_12": {
+        "q": 3,
+        "n": 84,
+        "k": 56,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_18": {
+        "q": 3,
+        "n": 84,
+        "k": 43,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_33": {
+        "q": 3,
+        "n": 84,
+        "k": 21,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_5": {
+        "q": 3,
+        "n": 84,
+        "k": 75,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_22": {
+        "q": 3,
+        "n": 84,
+        "k": 38,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_26": {
+        "q": 3,
+        "n": 84,
+        "k": 31,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_29": {
+        "q": 3,
+        "n": 84,
+        "k": 27,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_30": {
+        "q": 3,
+        "n": 84,
+        "k": 26,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_17": {
+        "q": 3,
+        "n": 84,
+        "k": 44,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_9": {
+        "q": 3,
+        "n": 84,
+        "k": 63,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_34": {
+        "q": 3,
+        "n": 84,
+        "k": 20,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_84_3": {
+        "q": 3,
+        "n": 84,
+        "k": 79,
+        "d": 3,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_8": {
+        "q": 3,
+        "n": 86,
+        "k": 69,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_10": {
+        "q": 3,
+        "n": 86,
+        "k": 62,
+        "d": 10,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_38": {
+        "q": 3,
+        "n": 86,
+        "k": 17,
+        "d": 38,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_19": {
+        "q": 3,
+        "n": 86,
+        "k": 44,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_12": {
+        "q": 3,
+        "n": 86,
+        "k": 57,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_6": {
+        "q": 3,
+        "n": 86,
+        "k": 74,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_34": {
+        "q": 3,
+        "n": 86,
+        "k": 21,
+        "d": 34,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_16": {
+        "q": 3,
+        "n": 86,
+        "k": 49,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_22": {
+        "q": 3,
+        "n": 86,
+        "k": 40,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_42": {
+        "q": 3,
+        "n": 86,
+        "k": 16,
+        "d": 42,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_26": {
+        "q": 3,
+        "n": 86,
+        "k": 33,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_33": {
+        "q": 3,
+        "n": 86,
+        "k": 23,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_14": {
+        "q": 3,
+        "n": 86,
+        "k": 54,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_30": {
+        "q": 3,
+        "n": 86,
+        "k": 27,
+        "d": 30,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_5": {
+        "q": 3,
+        "n": 86,
+        "k": 77,
+        "d": 5,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_20": {
+        "q": 3,
+        "n": 86,
+        "k": 43,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_86_36": {
+        "q": 3,
+        "n": 86,
+        "k": 20,
+        "d": 36,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_11": {
+        "q": 3,
+        "n": 25,
+        "k": 9,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_25_15": {
+        "q": 3,
+        "n": 25,
+        "k": 5,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_18": {
+        "q": 3,
+        "n": 30,
+        "k": 5,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_30_19": {
+        "q": 3,
+        "n": 30,
+        "k": 4,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_19": {
+        "q": 3,
+        "n": 35,
+        "k": 7,
+        "d": 19,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_35_20": {
+        "q": 3,
+        "n": 35,
+        "k": 6,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_3": {
+        "q": 3,
+        "n": 21,
+        "k": 17,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_58_21": {
+        "q": 3,
+        "n": 58,
+        "k": 19,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_20_1": {
+        "q": 3,
+        "n": 20,
+        "k": 20,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_56_31": {
+        "q": 3,
+        "n": 56,
+        "k": 8,
+        "d": 31,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_35_21": {
+        "q": 3,
+        "n": 35,
+        "k": 5,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_50_25": {
+        "q": 3,
+        "n": 50,
+        "k": 10,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_6": {
+        "q": 3,
+        "n": 55,
+        "k": 44,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_8": {
+        "q": 3,
+        "n": 55,
+        "k": 39,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_16": {
+        "q": 3,
+        "n": 55,
+        "k": 27,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_15": {
+        "q": 3,
+        "n": 55,
+        "k": 28,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_13": {
+        "q": 3,
+        "n": 55,
+        "k": 30,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_21": {
+        "q": 3,
+        "n": 55,
+        "k": 17,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_20": {
+        "q": 3,
+        "n": 55,
+        "k": 18,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_26": {
+        "q": 3,
+        "n": 55,
+        "k": 12,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_3": {
+        "q": 3,
+        "n": 55,
+        "k": 50,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_55_14": {
+        "q": 3,
+        "n": 55,
+        "k": 29,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_12": {
+        "q": 3,
+        "n": 49,
+        "k": 26,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_9": {
+        "q": 3,
+        "n": 49,
+        "k": 30,
+        "d": 9,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_17": {
+        "q": 3,
+        "n": 49,
+        "k": 20,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_4": {
+        "q": 3,
+        "n": 49,
+        "k": 43,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_22": {
+        "q": 3,
+        "n": 49,
+        "k": 12,
+        "d": 22,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_3": {
+        "q": 3,
+        "n": 49,
+        "k": 44,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_19": {
+        "q": 3,
+        "n": 49,
+        "k": 15,
+        "d": 19,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_8": {
+        "q": 3,
+        "n": 49,
+        "k": 33,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_10": {
+        "q": 3,
+        "n": 49,
+        "k": 29,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_49_18": {
+        "q": 3,
+        "n": 49,
+        "k": 19,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_21": {
+        "q": 3,
+        "n": 49,
+        "k": 13,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_19": {
+        "q": 3,
+        "n": 39,
+        "k": 9,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_11": {
+        "q": 3,
+        "n": 39,
+        "k": 20,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_21": {
+        "q": 3,
+        "n": 39,
+        "k": 8,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_12": {
+        "q": 3,
+        "n": 39,
+        "k": 19,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_18": {
+        "q": 3,
+        "n": 39,
+        "k": 12,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_13": {
+        "q": 3,
+        "n": 39,
+        "k": 17,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_14": {
+        "q": 3,
+        "n": 39,
+        "k": 16,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_54_9": {
+        "q": 3,
+        "n": 54,
+        "k": 35,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_27": {
+        "q": 3,
+        "n": 45,
+        "k": 6,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_45_18": {
+        "q": 3,
+        "n": 45,
+        "k": 15,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_9": {
+        "q": 3,
+        "n": 55,
+        "k": 36,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_7": {
+        "q": 3,
+        "n": 55,
+        "k": 40,
+        "d": 7,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_42_24": {
+        "q": 3,
+        "n": 42,
+        "k": 7,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_13": {
+        "q": 3,
+        "n": 49,
+        "k": 25,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_6": {
+        "q": 3,
+        "n": 49,
+        "k": 38,
+        "d": 6,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_24": {
+        "q": 3,
+        "n": 49,
+        "k": 11,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_49_5": {
+        "q": 3,
+        "n": 49,
+        "k": 40,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_56_25": {
+        "q": 3,
+        "n": 56,
+        "k": 13,
+        "d": 25,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_55_19": {
+        "q": 3,
+        "n": 55,
+        "k": 19,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_55_17": {
+        "q": 3,
+        "n": 55,
+        "k": 26,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_23": {
+        "q": 3,
+        "n": 39,
+        "k": 6,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_39_7": {
+        "q": 3,
+        "n": 39,
+        "k": 26,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_20": {
+        "q": 3,
+        "n": 65,
+        "k": 25,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_14": {
+        "q": 3,
+        "n": 65,
+        "k": 34,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_37": {
+        "q": 3,
+        "n": 65,
+        "k": 8,
+        "d": 37,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_18": {
+        "q": 3,
+        "n": 65,
+        "k": 32,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_3": {
+        "q": 3,
+        "n": 65,
+        "k": 60,
+        "d": 3,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_29": {
+        "q": 3,
+        "n": 65,
+        "k": 14,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_23": {
+        "q": 3,
+        "n": 65,
+        "k": 21,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_8": {
+        "q": 3,
+        "n": 65,
+        "k": 49,
+        "d": 8,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_7": {
+        "q": 3,
+        "n": 65,
+        "k": 50,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_65_35": {
+        "q": 3,
+        "n": 65,
+        "k": 10,
+        "d": 35,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_19": {
+        "q": 3,
+        "n": 65,
+        "k": 26,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_9": {
+        "q": 3,
+        "n": 65,
+        "k": 44,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_32": {
+        "q": 3,
+        "n": 65,
+        "k": 12,
+        "d": 32,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_65_40": {
+        "q": 3,
+        "n": 65,
+        "k": 6,
+        "d": 40,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_51_7": {
+        "q": 3,
+        "n": 51,
+        "k": 37,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_51_8": {
+        "q": 3,
+        "n": 51,
+        "k": 35,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_51_16": {
+        "q": 3,
+        "n": 51,
+        "k": 23,
+        "d": 16,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_51_14": {
+        "q": 3,
+        "n": 51,
+        "k": 26,
+        "d": 14,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_51_17": {
+        "q": 3,
+        "n": 51,
+        "k": 22,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_51_15": {
+        "q": 3,
+        "n": 51,
+        "k": 25,
+        "d": 15,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_51_6": {
+        "q": 3,
+        "n": 51,
+        "k": 40,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_63_2": {
+        "q": 3,
+        "n": 63,
+        "k": 62,
+        "d": 2,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_6": {
+        "q": 3,
+        "n": 63,
+        "k": 52,
+        "d": 6,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_63_10": {
+        "q": 3,
+        "n": 63,
+        "k": 41,
+        "d": 10,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_63_27": {
+        "q": 3,
+        "n": 63,
+        "k": 15,
+        "d": 27,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_25": {
+        "q": 3,
+        "n": 63,
+        "k": 17,
+        "d": 25,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_32": {
+        "q": 3,
+        "n": 63,
+        "k": 11,
+        "d": 32,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_17": {
+        "q": 3,
+        "n": 63,
+        "k": 32,
+        "d": 17,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_7": {
+        "q": 3,
+        "n": 63,
+        "k": 48,
+        "d": 7,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_63_20": {
+        "q": 3,
+        "n": 63,
+        "k": 24,
+        "d": 20,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_4": {
+        "q": 3,
+        "n": 63,
+        "k": 56,
+        "d": 4,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_63_5": {
+        "q": 3,
+        "n": 63,
+        "k": 54,
+        "d": 5,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_63_12": {
+        "q": 3,
+        "n": 63,
+        "k": 37,
+        "d": 12,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_9": {
+        "q": 3,
+        "n": 63,
+        "k": 42,
+        "d": 9,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_24": {
+        "q": 3,
+        "n": 63,
+        "k": 19,
+        "d": 24,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_8": {
+        "q": 3,
+        "n": 63,
+        "k": 47,
+        "d": 8,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_63_11": {
+        "q": 3,
+        "n": 63,
+        "k": 40,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_18": {
+        "q": 3,
+        "n": 63,
+        "k": 31,
+        "d": 18,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_13": {
+        "q": 3,
+        "n": 63,
+        "k": 33,
+        "d": 13,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_29": {
+        "q": 3,
+        "n": 63,
+        "k": 13,
+        "d": 29,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_26": {
+        "q": 3,
+        "n": 63,
+        "k": 16,
+        "d": 26,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_21": {
+        "q": 3,
+        "n": 63,
+        "k": 22,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_23": {
+        "q": 3,
+        "n": 63,
+        "k": 20,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_63_33": {
+        "q": 3,
+        "n": 63,
+        "k": 10,
+        "d": 33,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_36_1": {
+        "q": 3,
+        "n": 36,
+        "k": 36,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_38_21": {
+        "q": 3,
+        "n": 38,
+        "k": 7,
+        "d": 21,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_32_19": {
+        "q": 3,
+        "n": 32,
+        "k": 5,
+        "d": 19,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_35_23": {
+        "q": 3,
+        "n": 35,
+        "k": 4,
+        "d": 23,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_1": {
+        "q": 3,
+        "n": 21,
+        "k": 21,
+        "d": 1,
+        "is_lcd": true
+    },
+    "Dim_BDLC_3_21_11": {
+        "q": 3,
+        "n": 21,
+        "k": 6,
+        "d": 11,
+        "is_lcd": false
+    },
+    "Dim_BDLC_3_21_2": {
+        "q": 3,
+        "n": 21,
+        "k": 20,
+        "d": 2,
+        "is_lcd": false
+    }
+}
