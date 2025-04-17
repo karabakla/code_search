@@ -1,0 +1,4 @@
+# Requirements
+- Magma
+- SageMath
+- Gurobi
