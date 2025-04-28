@@ -48,7 +48,7 @@ def get_largest_min_distance(q:int, n:int, k:int) -> int | str | List[int] | Non
     
     return None
 
-def get_exact_upper_bound_dimension(q:int, n:int, d:int) -> int | str | List[int] | None:
+def get_upper_bound_dimension(q:int, n:int, d:int) -> int | str | List[int] | None:
     return max([k for k in range(1, n+1) if get_largest_min_distance(q, n, k) == d], default=None)
     
 
@@ -94,6 +94,3 @@ def prepare_nd_csv(q:int, n_max:int):
 #         for k in range(1, 3):
 #             result = get_largest_min_distance(2, n, k)
 #             print(f"n={n}, k={k}, d={result}")
-
-
-# print(get_exact_upper_bound_dimension(3, 20, 11))

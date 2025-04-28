@@ -1,20 +1,10 @@
 from collections import deque
 from typing import Tuple, Set
-from LCDCodePool.GetClosestLCD import get_bdlc_codes
-from Utils.Code_Utils import is_zero_code, safe_minimum_distance
+from Utils.Code_Utils import safe_minimum_distance
 from Utils.MagmaUtils import MagmaSession
 from sage.all import * # type: ignore
 from sage.coding.linear_code import LinearCode # type: ignore
 from sage.coding.code_constructions import *   # type: ignore
-from sage.coding.punctured_code import _puncture # type: ignore
-from math import sqrt
-
-# def create_magma_session(thread_count = 1):
-#     magma_session = MagmaSession(f"{os.getcwd()}/Utils/Magma/MagmaCodes", thread_count)
-#     magma_session.magma.set_seed(0)
-#     return magma_session
-
-# magma_session = create_magma_session(4)
 
 def is_lcd_code(C:LinearCode) -> bool:
     """
@@ -23,120 +13,6 @@ def is_lcd_code(C:LinearCode) -> bool:
     G = C.generator_matrix()
     return not ((G * G.transpose()).is_singular())
 
-# def punctured_code(C:LinearCode, punctured_indices:set[int]) -> LinearCode:
-#     """
-#     Returns the punctured code of C with the punctured indices
-#     """
-#     return codes.PuncturedCode(C, punctured_indices) # type: ignore
-
-# def shortened_code(C:LinearCode, shortened_indices:set[int]) -> LinearCode:
-#     """
-#     Returns the shortened code of C with the shortened indices
-#     """
-    
-#     generator_matrix = C.generator_matrix()
-    
-#     new_generator_matrix = []
-#     for row in generator_matrix:
-#         if all([row[index] == 0 for index in shortened_indices]):
-#             new_row = _puncture(row, shortened_indices)
-#             new_generator_matrix.append(new_row)
-            
-#     if len(new_generator_matrix) == 0:
-#         # zero code
-#         return LinearCode(matrix(C.base_ring(), 0, C.length())) # type: ignore
-    
-#     return LinearCode(matrix(C.base_ring(), new_generator_matrix)) # type: ignore
-
-# def shortened_code(C, zero_coords) -> LinearCode:
-#     # add 1 to each index to match magma's 1-based indexing
-#     for _ in range(100):
-#         try:
-#             new_code_generator_matrix = magma_session.magma.ShortenCode(C, set([i+1 for i in zero_coords])).GeneratorMatrix().sage()
-#             return LinearCode(new_code_generator_matrix)
-#         except:
-#             pass
-#     raise Exception("Could not generate shortened code")
-    # r"""
-    # Shorten the linear code C by forcing the coordinates in `zero_coords`
-    # to be zero, then removing those coordinates from the code.
-
-    # INPUT:
-    # - `C`          -- a linear code (sage.coding.linear_code.LinearCode)
-    # - `zero_coords` -- a list (or set) of coordinates to be forced to zero
-
-    # OUTPUT:
-    # - A new LinearCode instance, the shortened code of C on `zero_coords`.
-
-    # EXAMPLE:
-    #     # Suppose C is an [n,k] linear code over GF(q).
-    #     # We want to shorten on coordinates [0,1] (forcing them to be zero).
-    #     shortened_C = shorten_linear_code(C, [0,1])
-
-    # ALGORITHM:
-    #     1. Extract the generator matrix G of C, of size k x n.
-    #     2. Reorder columns of G so that the `zero_coords` are placed last.
-    #        Let keep_coords be the complement (the coordinates you keep).
-    #     3. Partition G into [ G_keep | G_zero ]:
-    #         - G_keep corresponds to columns you will keep.
-    #         - G_zero corresponds to columns forced to zero.
-    #     4. Solve x * G_zero = 0 for x in the right kernel of G_zero^T.
-    #     5. For each basis vector x of that kernel, x * G_keep is a row
-    #        in the generator matrix of the shortened code.
-    #     6. Construct and return the new linear code spanned by these row vectors.
-    # """    
-    # # Basic checks
-    # n = C.length()
-    # if max(zero_coords) >= n or min(zero_coords) < 0:
-    #     raise ValueError("Some coordinates to shorten on are out of range.")
-    
-    # # Convert zero_coords to a sorted list (if not already)
-    # zero_coords = sorted(zero_coords)
-    # # Coordinates that we keep:
-    # keep_coords = [i for i in range(n) if i not in zero_coords]
-    
-    # # Get generator matrix of C
-    # G = C.generator_matrix()  # size: k x n
-    
-    # # Reorder columns so that "keep_coords" come first, then "zero_coords"
-    # new_order = keep_coords + zero_coords
-    # G_reordered = G[:, new_order]
-    
-    # # Split into G_keep and G_zero
-    # #   G_keep has the columns we keep
-    # #   G_zero has the columns forced to zero
-    # k = G.nrows()
-    # len_keep = len(keep_coords)
-    # G_keep = G_reordered[:, :len_keep]      # size: k x len_keep
-    # G_zero = G_reordered[:,  len_keep: ]    # size: k x (len(zero_coords))
-    
-    # # We want all vectors x of length k (over GF(q)) satisfying x * G_zero = 0.
-    # #   That is the same as G_zero^T * x^T = 0  --> x is in the right kernel of G_zero^T.
-    # M = G_zero.transpose()
-    # sol_space = M.right_kernel()  # space of dimension = ?
-
-    # # Build a generator matrix for the shortened code by:
-    # #   for each solution x in that kernel, take the row x * G_keep
-    # basis_solutions = sol_space.basis()
-    
-    # new_gen_rows = []
-    # for x in basis_solutions:
-    #     # x is a row vector in GF(q)^k
-    #     # The shortened codeword (in length len_keep) is x * G_keep
-    #     row = x * G_keep
-    #     new_gen_rows.append(row)
-    
-    # if not new_gen_rows:
-    #     # If the only solution is the trivial one, the shortened code is {0}
-    #     from sage.matrix.all import zero_matrix
-    #     new_G = zero_matrix(G.base_ring(), 0, len_keep)
-    # else:
-    #     new_G = matrix(new_gen_rows)
-
-    # from sage.coding.linear_code import LinearCode
-    # shortened_C = LinearCode(new_G)
-    
-    # return shortened_C
  
 def random_vector_From(field, dimension) -> vector: # type: ignore
     """
@@ -185,14 +61,7 @@ def select_best_possible_sub_dual_matrix(C:LinearCode, rows_count:int, max_itera
             best_sub_matrix = random_dual_matrix
     
     return best_sub_matrix
-    # random_dual_codes = [[dual_C.random_element() for _ in range(rows_count)] for _ in range(max_iteration)]
-    
-    # sub_matrices = [matrix(C.base_ring(), random_dual_codes[i]) for i in range(max_iteration)]
-    
-    # min_weights = [_get_min_weight(Matrix(C.base_ring(), g)) for g in sub_matrices if g.rank() == rows_count]
-    # best_sub_matrix = max(sub_matrices, key=lambda g: _get_min_weight(Matrix(C.base_ring(), g)))
-    
-    # return best_sub_matrix
+
 
 def lemma_4_1_generate_new_code_from(C:LinearCode, i:int) -> Tuple[LinearCode, str, int]:
     """
@@ -418,127 +287,3 @@ def theorem_4_7_generate_new_code_from(C:LinearCode, m:int, r:int, max_iteration
         raise ValueError("Generated code is not an LCD code")
     return new_code, f"{theorem_4_7_generate_new_code_from.__name__} m = {m}, r = {r}", (A.rows(), X.rows())
     
-def theorem_4_7_generate_new_code_from_2(C:LinearCode, r:int) -> Tuple[LinearCode,str]:
-    """
-    given a linear code C, returns a new linear code C' with [n, k+r]
-    """
-    field = C.base_ring()
-    n = C.length()
-    k = C.dimension()
-    
-    G = C.generator_matrix()
-    dual_G = C.parity_check_matrix()
-    
-    X = dual_G[:r]  # r rows of the dual generator matrix   
-    
-    G_new = X.stack(G)
-    
-    MS = MatrixSpace(field, k+r, n) # type: ignore
-    
-    new_code = LinearCode(MS(G_new))
-    if not is_lcd_code(new_code):
-        raise ValueError("Generated code is not an LCD code")
-    
-    return new_code, f"{theorem_4_7_generate_new_code_from_2.__name__} r = {r}"
-
-
-def theorem_slice_generator_matrix(C:LinearCode, r:int) -> Tuple[LinearCode,str]:
-    """
-    given a linear code C, returns a new linear code C' with [n, k+r]
-    """
-    field = C.base_ring()
-    q = field.order()
-    n = C.length()
-    k = C.dimension()
-    d = safe_minimum_distance(C)
-    G = C.generator_matrix()
-    
-    def get_sliced_row(G:matrix, r:int) -> matrix:
-        # deleted r rows where rows*rows^T non singular
-        while True:
-            deleted_rows = dict()
-            while len(deleted_rows) < r:
-                i = randint(0, G.nrows()-1)
-                deleted_rows[i] = G[i]
-                            
-            d_matrix = matrix(deleted_rows.values())
-            G_new = G.delete_rows(deleted_rows.keys())
-            if not (G_new*G_new.transpose()).is_singular():
-                return G_new
-        
-    
-    G_new = get_sliced_row(G, r)
-    
-    new_code = LinearCode(G_new)
-    if not is_lcd_code(new_code):
-        raise ValueError("Generated code is not an LCD code")
-    
-    return new_code, f"{theorem_slice_generator_matrix.__name__} r = {r}"
-
-# x = PolynomialRing(GF(3), 'x').gen()
-# n=35
-# gen_pol = x**25 + x**24 + x**23 + x**20 + x**19 + 2*x**18 + x**17 + x**16 + x**15 + x**14 + 2*x**13 + x**12 + 2*x**11 + 2*x**10 + 2*x**9 + 2*x**8 + x**7 + 2*x**6 + 2*x**5 + 2*x**2 + 2*x + 2
-# cyclic_lcd_code = codes.CyclicCode(generator_pol=gen_pol, length=n)
-
-# new_lcd_code_3 = shortened_code(cyclic_lcd_code, { 1})
-# print(cyclic_lcd_code, new_lcd_code_3, safe_minimum_distance(cyclic_lcd_code), safe_minimum_distance(new_lcd_code_3), is_lcd_code(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 0, 2)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 1, 3)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 2, 4)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 1, 1)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 2, 1)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 3, 1)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 3, 2)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-# new_lcd_code_3, params = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 2, 10)
-# print(new_lcd_code_3, safe_minimum_distance(new_lcd_code_3))
-
-
-
-
-# import random
-# random.seed(0)
-
-# for _ in range(100):
-#     cyclic_code_record = get_random_lcd_code_q(3)
-#     n = cyclic_code_record.n
-#     cyclic_lcd_code = cyclic_code_record.to_sage_linear_code()
-#     for i in range(n):
-#         new_lcd_code_1 = lemma_4_1_generate_new_code_from(cyclic_lcd_code, i)
-
-#         print(new_lcd_code_1, magma_session.magma.IsLCDCode(new_lcd_code_1), magma_session.magma.MinimumWeight(cyclic_lcd_code), magma_session.magma.MinimumWeight(new_lcd_code_1))
-
-# for i in range(1, 100):
- #   new_lcd_code_1 = prop_4_2_generate_new_code_from(cyclic_lcd_code, 3)
- #   new_lcd_code_2 = theorem_4_3_extended_const_method_generate_new_code_from(cyclic_lcd_code, 30)
-    # new_lcd_code_3 = theorem_4_7_generate_new_code_from(cyclic_lcd_code, 0, 1)
-
-    # print(new_lcd_code_1, magma_session.magma.IsLCDCode(new_lcd_code_1), magma_session.magma.MinimumWeight(cyclic_lcd_code), magma_session.magma.MinimumWeight(new_lcd_code_1))
-    # print(new_lcd_code_2, magma_session.magma.IsLCDCode(new_lcd_code_2), magma_session.magma.MinimumWeight(cyclic_lcd_code), magma_session.magma.MinimumWeight(new_lcd_code_2))
-    # print(new_lcd_code_3, magma_session.magma.IsLCDCode(new_lcd_code_3), magma_session.magma.MinimumWeight(cyclic_lcd_code), magma_session.magma.MinimumWeight(new_lcd_code_3))
-
-# from GenerateClosestLCDCode import get_lcd_codes_q
-
-# bdlc_lcd_codes = [code  for code in get_bdlc_codes(2) if sqrt((code.n  - 40)**4 + (code.k- 21)**2) < 20]
-
-# for lcd_code in bdlc_lcd_codes:
-#     lcd_code_sage = lcd_code.to_sage_linear_code()
-#     new_code,_ = theorem_slice_generator_matrix(lcd_code_sage, 2)
-#     new_code_d =  safe_minimum_distance(new_code)
-#     print(lcd_code, new_code,lcd_code.d,  new_code_d)
-    
-
