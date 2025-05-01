@@ -1,20 +1,21 @@
 # Extended LP Bound for LCD codes and New Binary and Ternary LCD Codes
-This repository contains Linear Programming Bounds up to 60 for q=2 and 50 for q=3, LCD Cyclic, Quasi-Cyclic and computationally generated LCD Codes.
-The results include binary and ternary LCD codes obtained via algebraic constructions and optimizations. Each generated LCD code is a possible new LCD code since results are filtered using known codes and Best Known LCD Linear Codes of Magma V2.28-19. 
+This repository contains Linear Programming Bounds for LCD codes up to length 60 for binary codes (q=2) and up to length 50 for ternary codes (q=3). The repository also includes cyclic, quasi-cyclic, and computationally generated LCD codes. The generated LCD codes presented are potentially new since results are filtered using known codes and Best Known LCD Linear Codes from Magma V2.28-19.
 
 ## Requirements
-- SageMath
-- Magma: To run the LCD and Quasi-Cyclic code generation
-- Gurobi: To run integer linear programming only.
-
+- **SageMath**: Required for code analysis and generation.
+- **Magma**: Essential for generating LCD and Quasi-Cyclic codes.
+- **Gurobi**: Needed only for running integer linear programming (ILP).
 
 ## Repository Structure
 
 - `outputs/`: Contains JSON files with systematically named LCD codes.
 - `scripts/`: Code generation scripts used to produce and analyze the LCD codes.
-- `README.md`: Provides an overview and instructions for using the repository.
+- `KnownPaperResults/`: Known LCD code results from published papers.
+- `LCDCodePool/`: Utilities for working with the LCD code pool.
+- `LP/`: Scripts for integer linear programming related tasks.
+- `Utils/`: Shared utilities across various scripts.
 
-## Known Paper Results (Folder: KnownPaperResults)
+## Known Paper Results (`KnownPaperResults` Folder)
 This folder contains the known results taken from the papers.
 - `./KnownPaperResults/Stefka.py`: Gives a table for F_2 up to n=40
     - [Bouyuklieva, S. Optimal binary LCD codes. Des. Codes Cryptogr. 89, 2445–2461 (2021)](https://doi.org/10.1007/s10623-021-00929-w)
@@ -46,18 +47,18 @@ This folder contains the known results taken from the papers.
 
 - `./KnownResults/KnownResults.py`: Combines all the known results to create n/k table.
 
-## LCD Code Pool (Folder: LCDCodePool)
+## LCD Code Pool (`LCDCodePool` Folder)
 - `./LCDCodePool/GetClosestLCD.py`: Finds the closest LCD code using BDLC LCD, Cyclic and Quasi Cyclic Codes.
 - `./LCDCodePool/LCD_Codes_to_Latex.py`: Creates the latex table for LCD Quasi Cyclic and Cyclic codes.
 
-## Linear Programming (Folder: LP)
+## Linear Programming (`LP` Folder)
 - `./LP/Extended_ILP.py`: Integer linear programming solver (Non-LCD) 
 - `./LP/Extended_LCD_ILP.py`: Integer LCD linear programming solver.
 - `./LP/gurobi_tune.py`: Used for tuning the Gurobi model.
 - `./LP/LP_to_Latex_table.py`: Used for creating latex table. 
 - `./LP/LP_Utils.py`: Some utility functions used especially in ILP program.
 
-## Utilities (Folder: Utils)
+## Utilities (`Utils` Folder)
 Utilities used across the code baseç.
 - `./Utils/CodeConstUtils/CodeConstUtils.py`: Implements the algebraic LCD generation algorithms presented in *Section 4*.
 
@@ -106,7 +107,7 @@ Contains Output Files of the programs
 - `./outputs/LCD_ILP_output_q3.csv`: ILP results after rounding down $`\in F_3`$.
 
 
-#### JSON File Naming Convention for Generated LCD codes Files.
+### Generated LCD codes Files Json File Structure
 
 Each search entry has the key convention:
 ```
@@ -117,8 +118,6 @@ where:
 - `n`: Length of the LCD code.
 - `k`: Dimension of the LCD code.
 - `dmax`: Upper bound for the minimum distance as derived from linear programming results.
-
-#### JSON File Structure
 
 Each JSON file provides comprehensive information about the generated code:
 
