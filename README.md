@@ -9,11 +9,10 @@ This repository contains Linear Programming Bounds for LCD codes up to length 60
 ## Repository Structure
 
 - `outputs/`: Contains JSON files with systematically named LCD codes.
-- `scripts/`: Code generation scripts used to produce and analyze the LCD codes.
 - `KnownPaperResults/`: Known LCD code results from published papers.
 - `LCDCodePool/`: Utilities for working with the LCD code pool.
-- `LP/`: Scripts for integer linear programming related tasks.
-- `Utils/`: Shared utilities across various scripts.
+- `LP/`: Contains integer linear programming Gurobi python codes.
+- `Utils/`: Shared utilities across various python codes.
 
 ## Known Paper Results (`KnownPaperResults` Folder)
 This folder contains the known results taken from the papers.
@@ -127,5 +126,3 @@ Each JSON file provides comprehensive information about the generated code:
 - `"const_method_params"`: Theoretical method used for code construction.
 - `"gen_objects"`: Parameters used during construction.
 - `"parent_code"`: Hierarchical link to the parent code (if applicable).
-
-
