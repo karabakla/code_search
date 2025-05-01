@@ -2,7 +2,7 @@
 This repository contains Linear Programming Bounds for LCD codes up to length 60 for binary codes (q=2) and up to length 50 for ternary codes (q=3). The repository also includes cyclic, quasi-cyclic, and computationally generated LCD codes. The generated LCD codes presented are potentially new since results are filtered using known codes and Best Known LCD Linear Codes from Magma V2.28-19.
 
 ## Requirements
-- **SageMath**: Required for code analysis and generation.
+- **SageMath**: Required for all.
 - **Magma**: Essential for generating LCD and Quasi-Cyclic codes.
 - **Gurobi**: Needed only for running integer linear programming (ILP).
 
