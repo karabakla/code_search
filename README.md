@@ -16,16 +16,16 @@ This repository contains Linear Programming Bounds for LCD codes up to length 60
 
 ## Known Paper Results (`KnownPaperResults` Folder)
 This folder contains the known results taken from the papers.
-- `./KnownPaperResults/Stefka.py`: Gives a table for F_2 up to n=40
+- `./KnownPaperResults/Stefka.py`: Gives a table for $`\mathbb{F}_2`$ up to n=40
     - [Bouyuklieva, S. Optimal binary LCD codes. Des. Codes Cryptogr. 89, 2445–2461 (2021)](https://doi.org/10.1007/s10623-021-00929-w)
 
-- `./KnownPaperResults/Wang.py`: Gives a table for F_2 up to n=50
+- `./KnownPaperResults/Wang.py`: Gives a table for $`\mathbb{F}_2`$ up to n=50
     - [Guodong Wang and Shengwei Liu and Hongwei Liu(2024) New constructions of optimal binary LCD codes *Finite Fields and Their Applications*, 95](https://doi.org/10.1016/j.ffa.2024.102381)
 
-- `./KnownPaperResults/YangLiu.py`: Gives a explicit calculation for F_2 when k=5
+- `./KnownPaperResults/YangLiu.py`: Gives a explicit calculation for $`\mathbb{F}_2`$ when k=5
     - [Yang Liu, Ruihu Li, Qiang Fu, Hao Song. On the minimum distances of binary optimal LCD codes with dimension 5[J]. AIMS Mathematics, 2024, 9(7): 19137-19153.](https://doi.org/10.3934/math.2024933)
 
-- `./KnownPaperResults/Harada.py`: Multiple paper used, gives various result for both F_2 and F_3. Naming convention is Harada_1, Harada_2, ...
+- `./KnownPaperResults/Harada.py`: Multiple paper used, gives various result for both $`\mathbb{F}_2`$ and $`\mathbb{F}_3`$. Naming convention is Harada_1, Harada_2, ...
     - `Harada_1`: [Harada, M. Construction of binary LCD codes, ternary LCD codes, and quaternary Hermitian LCD codes. Des. Codes Cryptogr. 89, 2295–2312 (2021)](https://doi.org/10.1007/s10623-021-00916-1)
     
     - `Harada_2`: [Araya, M., Harada, M., \& Saito, K. (2021). On the minimum weights of binary LCD codes and ternary LCD codes. Finite Fields and Their Applications, 76, 101925](https://doi.org/10.1016/j.ffa.2021.101925)
@@ -41,7 +41,7 @@ This folder contains the known results taken from the papers.
 
     - `Harada_7`: [Araya, M., Harada, M. On the minimum weights of binary linear complementary dual codes. Cryptogr. Commun. 12, 285–300 (2020)](https://doi.org10.1007/s12095-019-00402-5)
 
-- `./KnownPaperResults/ST_Dougherty_Ozkaya`: Gives a short cut calculation for k=1, and k= n-1
+- `./KnownPaperResults/ST_Dougherty_Ozkaya`: Gives a short cut calculation for k=1, and k= n-1 for both $`\mathbb{F}_2`$ and $`\mathbb{F}_3`$
     - [S. T. Dougherty, J.-L. Kim, B. Özkaya, L. Sok, and P. Solé, "The combinatorics of LCD codes: Linear programming bound and orthogonal matrices" Int. J. Inf. Coding Theory, vol. 4, nos. 2–3, pp. 116–128, 2017.](https://doi.org/10.48550/arXiv.1506.01955)
 
 - `./KnownResults/KnownResults.py`: Combines all the known results to create n/k table.
@@ -90,20 +90,20 @@ LCD Code code generator uses LCD Code Pool
 
 ## Output Files (Folder: outputs)
 Contains Output Files of the programs
-- `./outputs/code_generation_q2`: Generated LCD codes $`\in F_2`$.
-- `./outputs/code_generation_q3`: Generated LCD codes $`\in F_3`$.
+- `./outputs/code_generation_q2`: Generated LCD codes $`\in \mathbb{F}_2`$.
+- `./outputs/code_generation_q3`: Generated LCD codes $`\in \mathbb{F}_3`$.
 
-- `./outputs/LCD_Cyclic_Codes_q2.json`: Generated LCD cyclic codes $`\in F_2`$.
-- `./outputs/LCD_Cyclic_Codes_q3.json`: Generated LCD cyclic codes $`\in F_3`$.
+- `./outputs/LCD_Cyclic_Codes_q2.json`: Generated LCD cyclic codes $`\in \mathbb{F}_2`$.
+- `./outputs/LCD_Cyclic_Codes_q3.json`: Generated LCD cyclic codes $`\in \mathbb{F}_3`$.
 
-- `LCD_QuasiCyclic_Codes_q2.json`: Generated LCD Quasi-Cyclic codes $`\in F_2`$
-- `LCD_QuasiCyclic_Codes_q3.json`: Generated LCD Quasi-Cyclic codes $`\in F_3`$
+- `LCD_QuasiCyclic_Codes_q2.json`: Generated LCD Quasi-Cyclic codes $`\in \mathbb{F}_2`$
+- `LCD_QuasiCyclic_Codes_q3.json`: Generated LCD Quasi-Cyclic codes $`\in \mathbb{F}_3`$
 
-- `./outputs/LCD_ILP_output_q2_raw.csv`: ILP results before rounding down $`\in F_2`$.
-- `./outputs/LCD_ILP_output_q2.csv`: ILP results after rounding down $`\in F_2`$.
+- `./outputs/LCD_ILP_output_q2_raw.csv`: ILP results before rounding down $`\in \mathbb{F}_2`$.
+- `./outputs/LCD_ILP_output_q2.csv`: ILP results after rounding down $`\in \mathbb{F}_2`$.
 
-- `./outputs/LCD_ILP_output_q3_raw.csv`: ILP results before rounding down $`\in F_3`$.
-- `./outputs/LCD_ILP_output_q3.csv`: ILP results after rounding down $`\in F_3`$.
+- `./outputs/LCD_ILP_output_q3_raw.csv`: ILP results before rounding down $`\in \mathbb{F}_3`$.
+- `./outputs/LCD_ILP_output_q3.csv`: ILP results after rounding down $`\in \mathbb{F}_3`$.
 
 
 ### Generated LCD codes Files Json File Structure
@@ -126,3 +126,4 @@ Each JSON file provides comprehensive information about the generated code:
 - `"const_method_params"`: Theoretical method used for code construction.
 - `"gen_objects"`: Parameters used during construction.
 - `"parent_code"`: Hierarchical link to the parent code (if applicable).
+
