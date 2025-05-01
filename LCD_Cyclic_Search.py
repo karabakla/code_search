@@ -8,7 +8,6 @@ from KnownPaperResults import KnownResults
 from Utils.Code_Utils import is_self_reciprocal_polynomial, to_monic_reciprocal_polynomial
 from Utils.File_Cache import File_Cache
 from Utils.Magma.BestDimensionLinearCode import BDLC, BDLCRecord
-from Utils.Magma.MinumumDistance import CyclicCodeMinDistance
 from Utils.Types import CyclicCodeRecord, LinearCodeRecord
 from sage.all import PolynomialRing, FiniteField, gcd, Polynomial, prod, codes, magma, fork # type: ignore
 import itertools
@@ -173,13 +172,6 @@ class CyclicCodeFileCache(File_Cache):
     
 def get_min_distance(cyclic_code:codes.CyclicCode) -> int:
     print(f"Min distance:{cyclic_code}, generator:{cyclic_code.generator_polynomial()}")
-    # def get_min_distance_online_magma(C) -> int | None:        
-    #     sleep(randint(1, 10)) # wait for a random time to avoid spamming the server
-    #     return CyclicCodeMinDistance.get_min_distance(len(C.base_field()), C.length(), C.generator_polynomial())
-
-    # magma_min_distance = get_min_distance_online_magma(cyclic_code)
-    # if isinstance(magma_min_distance, int) and magma_min_distance > 0:
-    #     return magma_min_distance
     
     magma.SetNthreads(64)
     magma_min_distance = magma.MinimumDistance(cyclic_code)

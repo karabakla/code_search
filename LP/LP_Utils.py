@@ -56,7 +56,7 @@ def code_minimum_distance_upper_bound(q:int, n:int, k:int) -> int:
 
     return -1
 
-print(code_minimum_distance_upper_bound(2, 25, 15))
+# print(code_minimum_distance_upper_bound(2, 25, 15))
 
 # n = 7
 # q = 2

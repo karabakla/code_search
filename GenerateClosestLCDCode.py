@@ -35,41 +35,7 @@ def create_magma_session(thread_count = 1):
     return magma_session
 
 
-# def compare_codes(code1:LinearCodeRecord, code2:LinearCodeRecord) -> int:
-#     if code1.k == 0 or code2.k == 0:
-#         return 9999999999999999999
-    
-#     def calc_cost (code:LinearCodeRecord) -> int:
-#         return code.n - code.k - code.d - 1
-    
-#     print(f"Comparing {code1}:{calc_cost(code1)} and {code2}:{calc_cost(code2)}")
-#     return calc_cost(code1) - calc_cost(code2)
-    
-
-# def _to_linear_code_record(code:LinearCode):
-#     q = code.base_ring().order()
-#     n = code.length()
-#     k = code.dimension()
-#     min_distance = int(magma_session.magma.MinimumWeight(code))
-#     new_code_record = LinearCodeRecord(q, n, k, min_distance, True)    
-#     return new_code_record
-
-
-def get_min_distance(code:LinearCode) -> int:
-    # print(f"Min distance:{cyclic_code}, generator:{cyclic_code.generator_polynomial()}")
-    # def get_min_distance_online_magma(C) -> int | None:        
-    #     sleep(randint(1, 10)) # wait for a random time to avoid spamming the server
-    #     return CyclicCodeMinDistance.get_min_distance(len(C.base_field()), C.length(), C.generator_polynomial())
-
-    # magma_min_distance = get_min_distance_online_magma(cyclic_code)
-    # if isinstance(magma_min_distance, int) and magma_min_distance > 0:
-    #     return magma_min_distance
-    
-    # magma.SetNthreads(64)
-    # magma_min_distance = magma.MinimumDistance(cyclic_code)
-    # if isinstance(magma_min_distance, int) and magma_min_distance > 0:
-    #     return magma_min_distance
-    
+def get_min_distance(code:LinearCode) -> int:   
     return safe_minimum_distance(code)
 
 # common params for all code search records
