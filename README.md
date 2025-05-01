@@ -3,6 +3,7 @@ This repository contains Linear Programming Bounds for LCD codes up to length 60
 
 ## Requirements
 - **SageMath**: Required for all.
+    - **Note**: Update the entry `./vscode/launch.json, "python"` according to your SageMath setup
 - **Magma**: Essential for generating LCD and Quasi-Cyclic codes.
 - **Gurobi**: Needed only for running integer linear programming (ILP).
 
