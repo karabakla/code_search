@@ -288,8 +288,8 @@ def kill_child_processes(parent_pid, sig=signal.SIGTERM):
 @cached_method
 def get_n_d_lp_array(q:int) -> List[List[int]]:
     n_d_lp_array_raw:List[List[str]] = []
-    if os.path.exists(f"outputs/LCD_ILP_output_{q}.csv"):
-        with open(f"outputs/LCD_ILP_output_{q}.csv", 'r') as file:
+    if os.path.exists(f"outputs/LCD_ILP_output_q{q}.csv"):
+        with open(f"outputs/LCD_ILP_output_q{q}.csv", 'r') as file:
             reader = csv.reader(file)
             n_d_lp_array_raw = list(reader) # type: ignore
     
@@ -297,12 +297,13 @@ def get_n_d_lp_array(q:int) -> List[List[int]]:
     n_d_lp_array = [[int(x.rstrip("*").rstrip('up')) for x in row] for row in n_d_lp_array_raw]
     return n_d_lp_array
 
-def get_possible_d(q:int, n:int, k:int, n_d_lp_array:List[List[int]]) -> int | None:
-    if k == 1:
-        return n
-    
-    d_singleton = n -k +1
+from sage.coding.code_bounds import dimension_upper_bound # type: ignore
 
+def get_possible_d(q:int, n:int, k:int, n_d_lp_array:List[List[int]]) -> int | None:   
+    d_singleton = n -k +1
+    
+    d_min_alg:int = sys.maxsize
+    
     # max int
     d_lp_array:int = sys.maxsize
     if len(n_d_lp_array) > n-1:
@@ -323,6 +324,9 @@ def get_possible_d(q:int, n:int, k:int, n_d_lp_array:List[List[int]]) -> int | N
         return min(d_singleton, d_lp_array)
         
     return get_possible_d(q, n, k-1, n_d_lp_array)
+
+
+print(get_possible_d(2, 33, 12, get_n_d_lp_array(2)))
 
 
 def generate_best_code_for_nk(q:int, absolute_target_n: int, absolute_target_k: int, absolute_max_possible_d:int, initial_code_pool: List[LinearCodeSearchRecord],
