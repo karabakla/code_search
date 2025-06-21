@@ -297,8 +297,6 @@ def get_n_d_lp_array(q:int) -> List[List[int]]:
     n_d_lp_array = [[int(x.rstrip("*").rstrip('up')) for x in row] for row in n_d_lp_array_raw]
     return n_d_lp_array
 
-from sage.coding.code_bounds import dimension_upper_bound # type: ignore
-
 def get_possible_d(q:int, n:int, k:int, n_d_lp_array:List[List[int]]) -> int | None:  
     
     d_known = KnownResults.get_largest_min_distance(q, n, k) # type: ignore
@@ -320,8 +318,6 @@ def get_possible_d(q:int, n:int, k:int, n_d_lp_array:List[List[int]]) -> int | N
     # if not found, decrease k and try again, as d_k <= d_{k-1}    
     return get_possible_d(q, n, k-1, n_d_lp_array)
 
-
-print(get_possible_d(2, 33, 12, get_n_d_lp_array(2)))
 
 
 def generate_best_code_for_nk(q:int, absolute_target_n: int, absolute_target_k: int, absolute_max_possible_d:int, initial_code_pool: List[LinearCodeSearchRecord],
