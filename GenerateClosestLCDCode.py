@@ -299,30 +299,25 @@ def get_n_d_lp_array(q:int) -> List[List[int]]:
 
 from sage.coding.code_bounds import dimension_upper_bound # type: ignore
 
-def get_possible_d(q:int, n:int, k:int, n_d_lp_array:List[List[int]]) -> int | None:   
-    d_singleton = n -k +1
+def get_possible_d(q:int, n:int, k:int, n_d_lp_array:List[List[int]]) -> int | None:  
     
-    d_min_alg:int = sys.maxsize
+    d_known = KnownResults.get_largest_min_distance(q, n, k) # type: ignore
+    if isinstance(d_known, int):
+        return d_known
     
-    # max int
-    d_lp_array:int = sys.maxsize
+    d_singleton = n - k +1
+
+    # Check if n in n_d_lp_array, positions as 0 -> 1, 1 -> 2, 2 -> 3, etc.
     if len(n_d_lp_array) > n-1:
         row = n_d_lp_array[n-1]
         for d, k_lp in enumerate(row): # type: ignore
             try:
                 if int(k_lp) <= k:
-                    d_lp_array  = d
-                    break
+                    return min(d, d_singleton)
             except:
                 pass
-        
-    d = KnownResults.get_largest_min_distance(q, n, k) # type: ignore
-    if isinstance(d, int):
-        return d
     
-    if d_lp_array != sys.maxsize:
-        return min(d_singleton, d_lp_array)
-        
+    # if not found, decrease k and try again, as d_k <= d_{k-1}    
     return get_possible_d(q, n, k-1, n_d_lp_array)
 
 
