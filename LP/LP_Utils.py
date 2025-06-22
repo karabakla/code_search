@@ -8,7 +8,7 @@ def krawtchouk(n:int, q:int, j:int, x:int) -> int:
 def volume_of_hamming_ball(n:int, r:int, q:int) -> int:
     return sum((q-1)**i * binomial(n, i) for i in range(r+1))
 
-def gilbert_varshamov_bound_k(q:int, n:int, d:int) -> int:
+def gilbert_bound_k(q:int, n:int, d:int) -> int:
     return int(math.log(q**n / volume_of_hamming_ball(n, d-1, q), q))
 
 def gilbert_varshamov_linear_bound_k(q:int, n:int, d:int) -> int:
@@ -21,18 +21,21 @@ def gilbert_varshamov_linear_bound_k(q:int, n:int, d:int) -> int:
         else:
             return n-1
     
+    # ------------------------------------------------------
+    # gilbert_varshamov bound for linear codes
     vol = Integer(1 + volume_of_hamming_ball(n-1, d-2, q))
     
     if vol.is_power_of(q):
         return int(n - vol.exact_log(q))
     
-    k = int(n - math.ceil(vol.log(q)))
+    k_gilbert_varshamov = int(n - math.ceil(vol.log(q)))
+    # -------------------------------------------------------
     
-    k_mds = n - d +1
-    if q == 2 and k>= k_mds:
-        return gilbert_varshamov_bound_k(q, n, d) # there is no mds code in q=2
+    k_mds = n - d + 1
+    if q == 2 and k_gilbert_varshamov >= k_mds:
+        return gilbert_bound_k(q, n, d) # there is no mds code in q=2
 
-    return k
+    return k_gilbert_varshamov
     
 
 

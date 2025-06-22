@@ -19,7 +19,7 @@ from sage.coding.code_constructions import random_linear_code # type: ignore
 
 from Utils.File_Cache import File_Cache
 from Utils.Magma.BestDimensionLinearCode import BDLC, BDLCRecord
-from Utils.Code_Utils import  is_self_reciprocal_polynomial, root_of_unity, safe_minimum_distance, vertical_concatanate_codes, intersection_code, is_hermitian_LCD_code
+from Utils.Code_Utils import  is_self_reciprocal_polynomial
 
 
 # Load the magma specific code and run the session
@@ -39,7 +39,7 @@ class LCD_QC_Search:
         self.Fq = GF(self.q, 'w')
         self.w = self.Fq.primitive_element()
         self.F_ext = self.magma.Parent(self.magma.RootOfUnity(m, self.Fq))
-        #self.F_ext = root_of_unity(m, self.Fq).parent()
+        
         self.P = PolynomialRing(self.Fq, 'x')
         self.x = self.P.gen()
 
