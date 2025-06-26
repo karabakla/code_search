@@ -26,9 +26,9 @@ def gilbert_varshamov_linear_bound_k(q:int, n:int, d:int) -> int:
     vol = Integer(1 + volume_of_hamming_ball(n-1, d-2, q))
     
     if vol.is_power_of(q):
-        return int(n - vol.exact_log(q))
-    
-    k_gilbert_varshamov = int(n - math.ceil(vol.log(q)))
+        k_gilbert_varshamov = int(n - vol.exact_log(q))
+    else:
+        k_gilbert_varshamov = int(n - math.ceil(vol.log(q)))
     # -------------------------------------------------------
     
     k_mds = n - d + 1
@@ -36,8 +36,6 @@ def gilbert_varshamov_linear_bound_k(q:int, n:int, d:int) -> int:
         return gilbert_bound_k(q, n, d) # there is no mds code in q=2
 
     return k_gilbert_varshamov
-    
-
 
 def gilbert_varshamov_bound_find_lower_dual_distance(q:int, n:int, k:int) -> int:
     j = 0

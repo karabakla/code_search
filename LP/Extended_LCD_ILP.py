@@ -309,13 +309,13 @@ def get_krawtchouk_cached(n, q, d, file_cache:Optional[File_Cache] = None) -> di
 
 # test method
 
-start_time = time.time()
-q, n, d = 3, 53, 4
-k_lo = gilbert_varshamov_linear_bound_k(q, n, d)
-k_up = int(dimension_upper_bound(n, d, q)) # type: ignore
-solve_result = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, get_krawtchouk_cached(n, q, d), 24)
-duration = time.time() - start_time
-print(f"({q}, {n}, {d}, {k_lo}, {k_up}): {solve_result} in {duration} seconds")
+# start_time = time.time()
+# q, n, d = 2, 4,4
+# k_lo = 0 #gilbert_varshamov_linear_bound_k(q, n, d)
+# k_up = 5 #int(dimension_upper_bound(n, d, q)) # type: ignore
+# solve_result = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, get_krawtchouk_cached(n, q, d), 24)
+# duration = time.time() - start_time
+# print(f"({q}, {n}, {d}, {k_lo}, {k_up}): {solve_result} in {duration} seconds")
 
 
 if __name__ == "__main__":

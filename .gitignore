@@ -1,1 +1,3 @@
 *.pyc
+*.log
+LP/__pycache__/LP_Utils.cpython-312.pyc

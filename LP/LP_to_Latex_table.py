@@ -6,10 +6,10 @@ q = 3
 
 
 n_d_list_2 = [
-    ((2, 30), (1, 29)),
+    ((2, 30), (1, 30)),
 
-    ((31, 60), (1, 29)),
-    ((31, 60), (30, 60)),
+    ((31, 60), (1, 30)),
+    ((31, 60), (31, 60)),
 ]
 
 n_d_list_3 = [
@@ -64,8 +64,15 @@ for (n_min, n_max), (d_min, d_max) in n_d_list:
 
     for _, n in enumerate(range(n_min-1, n_max)):
         if n < d_min :
-            continue
-        row= [ to_row_string(r) for r in output_array[n][d_min-1:d_max] if r != '0']
+            continue        
+        
+        if q == 2:
+            output_array[n][n] = '1*' if (n+1) % 2 != 0 else '0*'
+        elif q == 3:
+            output_array[n][n] = '0*' if (n+1) % 3 == 0 else '1*'
+        
+        
+        row = [ to_row_string(r) for r in output_array[n][d_min-1:d_max] if r != '0']
         
         latex_table += "\n" + " & ".join([ f"\\textbf{{{n+1}}}"] + row) + " &" * (d_max-len(row) - d_min +1) + " \\\\"
 
@@ -73,7 +80,7 @@ for (n_min, n_max), (d_min, d_max) in n_d_list:
     
     latex_table += "\n\\hline"
     latex_table += "\n\\end{tabular}"
-    latex_table += f"\n\\caption{{{table_name} LCD bounds for ${n_min} \\leq n \\leq {n_max}$ and ${d_min} \\leq d \\leq {d_max}$}}"
+    latex_table += f"\n\\caption{{{table_name} LCD bounds raw for ${n_min} \\leq n \\leq {n_max}$ and ${d_min} \\leq d \\leq {d_max}$}}"
     latex_table += f"\n\\label{{tab:lp_tables_q{q}_{n_min}_{n_max}_{d_min}_{d_max}}}"
     latex_table += "\n\\end{sidewaystable}"
     #latex_table += "\n\\end{landscape}"
