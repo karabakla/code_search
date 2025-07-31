@@ -1,11 +1,6 @@
 from GetClosestLCD import *
 from KnownPaperResults import KnownResults
 
-def create_magma_session(thread_count = 12):
-    magma_session = MagmaSession(f"{os.getcwd()}/Utils/Magma/MagmaCodes", thread_count)
-    magma_session.magma.set_seed(0)
-    return magma_session
-
 def latex_cyclic_code(q:int):
     
     cyclic_codes = get_cyclic_codes(q)

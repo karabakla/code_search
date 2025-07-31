@@ -82,7 +82,7 @@ def get_largest_min_distance(q:int, n:int, k:int) -> int | str | List[int] | Non
 
 
 @lru_cache(maxsize=1024)
-def get_upper_bound_dimension(q:int, n:int, d:int) -> int | str | List[int] | None:
+def get_upper_bound_dimension(q:int, n:int, d:int) -> int:
     k_singleton = n-d +1
     for k in range(k_singleton+1, 1, -1):
         dist = get_largest_min_distance(q, n, k)
@@ -136,7 +136,7 @@ def prepare_nd_csv(q:int, n_max:int):
 # prepare_nk_csv(3, 50)
 # prepare_nd_csv(3, 50)
 
-print(get_upper_bound_dimension(3, 50, 27))
+# print(get_upper_bound_dimension(3, 50, 27))
 # print(get_largest_min_distance(2, 11, 3))
 # for n in range(2, 10):
 #         for k in range(1, 3):
