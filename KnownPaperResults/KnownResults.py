@@ -16,6 +16,7 @@ def simple_known_results(n:int, k:int):
     
     return None
 
+@lru_cache(maxsize=40960)
 def best_known_linear_code_dimension_bound_www(q:int, n:int, k:int):
     if q not in {2, 3, 4, 5, 7, 8, 9}:
         raise ValueError("q must be one of {2, 3, 4, 5, 7, 8, 9}")
