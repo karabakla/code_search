@@ -77,22 +77,25 @@ def get_largest_min_distance(q:int, n:int, k:int) -> int | str | List[int] | Non
     if harada_result is not None:
         return harada_result
     
-    try:
-        code_tables_lower, code_tables_upper = best_known_linear_code_dimension_bound_www(q, n, k)
-        return code_tables_upper
-    except:
-        pass
     return None
 
+
+@lru_cache(maxsize=1024)
 def get_upper_bound_dimension(q:int, n:int, d:int) -> int | str | List[int] | None:
-    candidates = []
-    for k in range(1, n + 1):
+    k_singleton = n-d +1
+    for k in range(k_singleton+1, 1, -1):
         dist = get_largest_min_distance(q, n, k)
         if isinstance(dist, int) and dist >= d:
-            candidates.append(k)
-
-    return max(candidates, default=None)
+            return k
+        else:
+            try:
+                code_tables_lower, code_tables_upper = best_known_linear_code_dimension_bound_www(q, n, k)
+                if code_tables_upper>= d:
+                    return k
+            except:
+                pass
     
+    return k_singleton
 
 # for d in range(1, 33):
 #     result = get_upper_bound_dimension(2, 33, d)
@@ -132,7 +135,7 @@ def prepare_nd_csv(q:int, n_max:int):
 # prepare_nk_csv(3, 50)
 # prepare_nd_csv(3, 50)
 
-# print(get_upper_bound_dimension(3, 50, 27))
+print(get_upper_bound_dimension(3, 50, 27))
 # print(get_largest_min_distance(2, 11, 3))
 # for n in range(2, 10):
 #         for k in range(1, 3):
