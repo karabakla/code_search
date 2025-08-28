@@ -230,24 +230,45 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
 
     return None
 
+def compute_algebraic_bound(q, n, d) -> int | None:
+    if d == 1: # trivial code
+        return n
+    if q == 2:
+        if n % 2 == 0:
+            if n == d:
+                return 0
+            if d == 2:
+                return n-2
+        else:
+            if n == d:
+                return 1
+            if d == 2:
+                return n-1
+            
+    return None
+
 def compute_lcd_bound(q, n, d, krawtchouk_cache:dict, threads_count) -> Tuple[int, int, int, int, int, Optional[float|str]]:
+    
+    k_alg = compute_algebraic_bound(q, n, d)
+    if k_alg is not None:
+        return q, n, d, k_alg, k_alg, k_alg
     
     k_up:int = safe_dimension_upper_bound(n, d, q) # type: ignore
 
-    bound_max:float = -1
+    best_upper_bound:float = k_up
     k_lo_used = -1
     try:
         for k_lo in range(0, k_up+1):
             bound = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache, threads_count)
             if bound is not None and isinstance(bound, float):
-                if bound > bound_max:
-                    bound_max = bound
+                if bound < best_upper_bound:
+                    best_upper_bound = bound
                     k_lo_used = k_lo
     except:
         print(f"Error in ({q}, {n}, {d}): {traceback.format_exc()}")
         return q, n, d, k_lo_used, k_up, None
 
-    return q, n, d, k_lo_used, k_up, bound_max
+    return q, n, d, k_lo_used, k_up, best_upper_bound
 
 
 # def is_integer(x, tol):
