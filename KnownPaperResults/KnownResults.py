@@ -1,5 +1,5 @@
 from functools import lru_cache
-from typing import List
+from typing import List, Optional, Tuple
 
 import requests
 from KnownPaperResults.BinBinPang import BinBinPang_Get_Largest_Known_d
@@ -47,34 +47,40 @@ def best_known_linear_code_dimension_bound_www(q:int, n:int, k:int):
 
 @lru_cache(maxsize=40960)
 def get_largest_min_distance(q:int, n:int, k:int) -> int | str | List[int] | None:
-    
+
+    def safe_int_cast(value):
+        try:
+            return int(value)
+        except:
+            return value
+
     simple_known_results_result = simple_known_results(n, k)
     if simple_known_results_result is not None:
         return simple_known_results_result
-    
-    st_dougherty_ozkaya_result = ST_Dougherty_Ozkaya_Get_Largest_d(q, n, k)
+
+    st_dougherty_ozkaya_result = safe_int_cast(ST_Dougherty_Ozkaya_Get_Largest_d(q, n, k))
     if st_dougherty_ozkaya_result is not None:
         return st_dougherty_ozkaya_result
-    
-    bin_bin_pang_result = BinBinPang_Get_Largest_Known_d(q, n, k)
+
+    bin_bin_pang_result = safe_int_cast(BinBinPang_Get_Largest_Known_d(q, n, k))
     if bin_bin_pang_result is not None:
         return bin_bin_pang_result
-    
-    yang_liu_result = YangLiu_Get_Largest_d(q, n, k)
+
+    yang_liu_result = safe_int_cast(YangLiu_Get_Largest_d(q, n, k))
     if yang_liu_result is not None:
         return yang_liu_result
-    
-    stefka_result = Stefka_Get_Largest_d(q, n, k)
-    
+
+    stefka_result = safe_int_cast(Stefka_Get_Largest_d(q, n, k))
+
     if stefka_result is not None:
         return stefka_result
-    
-    wang_result = Wang_Get_Largest_d(q, n, k)
+
+    wang_result = safe_int_cast(Wang_Get_Largest_d(q, n, k))
     if wang_result is not None:
         return wang_result
-    
-    harada_result = Harada_Get_Largest_d(q, n, k)
-    
+
+    harada_result = safe_int_cast(Harada_Get_Largest_d(q, n, k))
+
     if harada_result is not None:
         return harada_result
     
@@ -82,7 +88,7 @@ def get_largest_min_distance(q:int, n:int, k:int) -> int | str | List[int] | Non
 
 
 @lru_cache(maxsize=1024)
-def get_upper_bound_dimension(q:int, n:int, d:int) -> int:
+def get_upper_bound_dimension(q:int, n:int, d:int) -> int: # return value with flag if known
     k_singleton = n-d +1
     for k in range(k_singleton+1, 1, -1):
         dist = get_largest_min_distance(q, n, k)
@@ -91,13 +97,25 @@ def get_upper_bound_dimension(q:int, n:int, d:int) -> int:
         else:
             try:
                 code_tables_lower, code_tables_upper = best_known_linear_code_dimension_bound_www(q, n, k)
-                if code_tables_upper>= d:
+                if code_tables_upper >= d:
                     return k
             except:
                 pass
-    
+
     return k_singleton
 
+@lru_cache(maxsize=1024)
+def get_upper_bound_dimension_explicit(q:int, n:int, d:int) -> Optional[int]: # return value with flag if known
+    k_singleton = n-d +1
+    for k in range(k_singleton+1, 1, -1):
+        dist = get_largest_min_distance(q, n, k)
+        if isinstance(dist, int) and dist == d:
+            return k
+
+    return None
+
+
+# print(get_upper_bound_dimension_explicit(2, 39, 5))
 # for d in range(1, 33):
 #     result = get_upper_bound_dimension(2, 33, d)
 #     print(f"n={33}, d={d}, k={result}")

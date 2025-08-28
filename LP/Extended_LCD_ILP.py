@@ -8,7 +8,7 @@ import traceback
 from typing import Optional, Tuple
 from gurobipy import GRB, quicksum, Model, Env
 from pyrsistent import b
-from KnownPaperResults.KnownResults import get_upper_bound_dimension
+from KnownPaperResults.KnownResults import get_upper_bound_dimension, get_upper_bound_dimension_explicit
 from LP.Extended_ILP import Solve_Extended_ILP
 from Utils.File_Cache import File_Cache
 from LP_Utils import  krawtchouk, safe_dimension_upper_bound
@@ -339,7 +339,7 @@ if __name__ == "__main__":
 
     # open for the first time
     # for n, d in n_and_d_array:
-    #     k_up = get_upper_bound_dimension(q, n, d)
+    #     k_up: Optional[int] = get_upper_bound_dimension_explicit(q, n, d)
     #     if isinstance(k_up, int):
     #         output_array[n-1][d-1] = f"{k_up}*"
     #         continue
