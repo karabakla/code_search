@@ -7,10 +7,11 @@ import time
 import traceback
 from typing import Optional, Tuple
 from gurobipy import GRB, quicksum, Model, Env
+from pyrsistent import b
 from KnownPaperResults.KnownResults import get_upper_bound_dimension
 from LP.Extended_ILP import Solve_Extended_ILP
 from Utils.File_Cache import File_Cache
-from LP_Utils import gilbert_varshamov_bound_find_lower_dual_distance, gilbert_varshamov_linear_bound_k, krawtchouk
+from LP_Utils import  krawtchouk, safe_dimension_upper_bound
 from sage.all import codes, binomial, cached_method, RR # type: ignore
 
 from sage.coding.code_bounds import dimension_upper_bound # type: ignore
@@ -57,8 +58,6 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
 
         model_prep_start = time.time()
 
-        dual_d0 = 0 #gilbert_varshamov_bound_find_lower_dual_distance(q, n, k_lo)
-
         def get_Krawtchouk_0(j):
             return (q-1)**j * binomial(n, j)
 
@@ -73,26 +72,14 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
             lhs = quicksum(A[i-d] * krawtchouk_cache.get((n, q, j, i))/get_Krawtchouk_0(j) for i in range(d, n+1))
             rhs = -1
 
-            if j < dual_d0:
-                model.addLConstr(lhs == rhs)
-            else:
-                model.addLConstr(lhs >= rhs)
+            model.addLConstr(lhs >= rhs)
 
-        for j in range(max(d, dual_d0), n+1):
+        for j in range(d, n+1):
             lhs = A[j-d] *(q**k_lo/ get_Krawtchouk_0(j))
             rhs = quicksum(A[i-d] * (1 - krawtchouk_cache.get((n, q, j, i))/get_Krawtchouk_0(j) ) for i in range(d, n+1))
 
             model.addLConstr(lhs <= rhs)
 
-            # A_j = A[j-d]
-            # B_j = 1/q**k_up*quicksum(A[i-d] * krawtchouk_cache.get((n, q, j, i))  for i in range(d, n+1))
-
-            # lhs = (A_j + B_j) / ((q-1)**j * binomial(n, j))
-            # rhs = 1
-            # model.addLConstr(lhs <= rhs)
-
-        #model.addConstr(quicksum(A[i-d] for i in range(d, n+1)) >= q**k_lo)
-        # model.addConstr(quicksum(A[i-d] for i in range(d, n+1)) <= q**(k_up +0.99999))
 
         model.setObjective(quicksum(A[i-d] for i in range(d, n+1)), GRB.MAXIMIZE)
 
@@ -159,7 +146,10 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
 
        
         def solve_model(model:Model):
-            model.presolve()
+            try:
+                model.presolve()
+            except:
+                pass
             model.update()
             model.optimize()
             return model
@@ -240,45 +230,24 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
 
     return None
 
-def compute_algebraic_bound(q, n, d) -> int | None:
-    if d == 1: # trivial code
-        return n
-    if q == 2:
-        if n % 2 == 0:
-            if n == d:
-                return 0
-            if d == 2:
-                return n-2
-        else:
-            if n == d:
-                return 1
-            if d == 2:
-                return n-1
+def compute_lcd_bound(q, n, d, krawtchouk_cache:dict, threads_count) -> Tuple[int, int, int, int, int, Optional[float|str]]:
+    
+    k_up:int = safe_dimension_upper_bound(n, d, q) # type: ignore
 
-    k_lo = gilbert_varshamov_linear_bound_k(q, n, d)
-    k_up = dimension_upper_bound(n, d, q) # type: ignore
-
-    if k_lo == k_up:
-        return k_lo
-
-    return None
-
-def compute_lcd_bound(q, n, d, krawtchouk_cache:dict, threads_count) -> Tuple[int, int, int, Optional[float|str]]:
-    k_alg = compute_algebraic_bound(q, n, d)
-
-    if k_alg is not None:
-        return q, n, d, k_alg
-
-    k_lo = gilbert_varshamov_linear_bound_k(q, n, d)
-    k_up = dimension_upper_bound(n, d, q) # type: ignore
-
+    bound_max:float = -1
+    k_lo_used = -1
     try:
-        bound = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache, threads_count)
+        for k_lo in range(0, k_up+1):
+            bound = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache, threads_count)
+            if bound is not None and isinstance(bound, float):
+                if bound > bound_max:
+                    bound_max = bound
+                    k_lo_used = k_lo
     except:
         print(f"Error in ({q}, {n}, {d}): {traceback.format_exc()}")
-        return q, n, d, None
+        return q, n, d, k_lo_used, k_up, None
 
-    return q, n, d, bound
+    return q, n, d, k_lo_used, k_up, bound_max
 
 
 # def is_integer(x, tol):
@@ -288,11 +257,6 @@ def compute_lcd_bound(q, n, d, krawtchouk_cache:dict, threads_count) -> Tuple[in
 #     if is_integer(x, tol):
 #         return int(round(x))
 #     return int(x)
-
-def check_k0_conjecture(q, n, d, bound:int) -> bool:
-    k0 = gilbert_varshamov_linear_bound_k(q, n, d)
-
-    return k0 <= bound
 
 @cached_method
 def get_krawtchouk_cached(n, q, d, file_cache:Optional[File_Cache] = None) -> dict:
@@ -311,7 +275,6 @@ def get_krawtchouk_cached(n, q, d, file_cache:Optional[File_Cache] = None) -> di
 
 # start_time = time.time()
 # q, n, d = 2, 4,4
-# k_lo = 0 #gilbert_varshamov_linear_bound_k(q, n, d)
 # k_up = 5 #int(dimension_upper_bound(n, d, q)) # type: ignore
 # solve_result = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, get_krawtchouk_cached(n, q, d), 24)
 # duration = time.time() - start_time
@@ -319,7 +282,7 @@ def get_krawtchouk_cached(n, q, d, file_cache:Optional[File_Cache] = None) -> di
 
 
 if __name__ == "__main__":
-    q = 3
+    q = 2
     n_max = 60
     threads_count = 24
     sch_count = 1 # max 24
@@ -350,7 +313,7 @@ if __name__ == "__main__":
 
     n_and_d_array = [
             [n,d] for n in range(1, n_max+1) for d in range(1, n)
-            if (int(output_array[n-1][d-1].rstrip('*').rstrip('up')) == 0 or int(output_array[n-1][d-1].rstrip('*').rstrip('up')) == -1 or not check_k0_conjecture(q, n, d, int(output_array[n-1][d-1].rstrip('*').rstrip('up'))))
+            if int(output_array[n-1][d-1].rstrip('*').rstrip('up')) == 0 or int(output_array[n-1][d-1].rstrip('*').rstrip('up')) == -1 
         ]
 
     # open for the first time
@@ -392,9 +355,8 @@ if __name__ == "__main__":
         for future in as_completed(futures):
             try:
                 completed_tasks += 1
-                q, n, d, bound = future.result()
-                k_lo = gilbert_varshamov_linear_bound_k(q, n, d)
-                k_up = dimension_upper_bound(n, d, q) # type: ignore
+                q, n, d, k_lo, k_up, bound = future.result()
+               
                 print(f"Completed ({q}, {n}, {d}, {k_lo}, {k_up}): {bound} {completed_tasks}/{total_tasks}")
 
                 bound_int = int(bound) if isinstance(bound, float) else -1

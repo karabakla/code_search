@@ -1,6 +1,6 @@
 import math
 from sage.all import binomial, Integer, codes # type: ignore
-from sage.coding.code_bounds import dimension_upper_bound # type: ignore
+from sage.coding.code_bounds import dimension_upper_bound,elias_upper_bound, hamming_upper_bound, plotkin_upper_bound,singleton_upper_bound # type: ignore
 
 def krawtchouk(n:int, q:int, j:int, x:int) -> int:
     return int(sum([(-1)**k *(q-1)**(j-k) * binomial(x,k) * binomial(n-x, j-k) for k in range(j+1)]))
@@ -56,6 +56,20 @@ def code_minimum_distance_upper_bound(q:int, n:int, k:int) -> int:
             pass
 
     return -1
+
+def safe_bound_call(func, *args):
+    try:
+        return func(*args)
+    except:
+        return -1
+    
+def safe_dimension_upper_bound(n, d, q) -> int:   # type:ignore
+    eub = safe_bound_call(elias_upper_bound, n, q, d) # type:ignore
+    hub = safe_bound_call(hamming_upper_bound, n, q, d)  # type:ignore
+    pub = safe_bound_call(plotkin_upper_bound, n, q, d)  # type:ignore
+    sub = safe_bound_call(singleton_upper_bound, n, q, d)  # type:ignore
+
+    return int(math.log(max(eub, hub, pub, sub), q))  # type:ignore
 
 # print(code_minimum_distance_upper_bound(2, 25, 15))
 
