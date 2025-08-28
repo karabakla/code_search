@@ -255,15 +255,20 @@ def compute_lcd_bound(q, n, d, krawtchouk_cache:dict, threads_count) -> Tuple[in
     
     k_up:int = safe_dimension_upper_bound(n, d, q) # type: ignore
 
-    best_upper_bound:float = k_up
+    best_upper_bound:float = -1
     k_lo_used = -1
     try:
         for k_lo in range(0, k_up+1):
             bound = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache, threads_count)
-            if bound is not None and isinstance(bound, float):
-                if bound < best_upper_bound:
-                    best_upper_bound = bound
-                    k_lo_used = k_lo
+            
+            if not isinstance(bound, float):
+                if best_upper_bound > -1:
+                    break # LP program could not found suitable value so terminate the search
+                continue    
+            
+            best_upper_bound = bound
+            k_lo_used = k_lo
+            
     except:
         print(f"Error in ({q}, {n}, {d}): {traceback.format_exc()}")
         return q, n, d, k_lo_used, k_up, None
