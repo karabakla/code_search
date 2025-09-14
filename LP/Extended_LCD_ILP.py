@@ -44,9 +44,11 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
     with Model("mip") as model:
         model.params.OutputFlag =1 # silent mode
         model.params.LogToConsole = 0
-        model.params.LogFile = f"outputs/logs/gurobi{q}_{n}_{d}_{k_lo}.log"
-        if os.path.exists(model.params.LogFile):
-            os.remove(model.params.LogFile)
+        # model.params.LogFile = f"outputs/logs/gurobi{q}_{n}_{d}_{k_lo}.log"
+        # if os.path.exists("outputs/logs"):
+        #     os.makedirs("outputs/logs")
+        # if os.path.exists(model.params.LogFile):
+        #     os.remove(model.params.LogFile)
         # Known settings
         # A_0 = 1
         # A_1 ... A_{d-1} = 0
@@ -99,7 +101,7 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
         model.params.MIPGapAbs = 1e-1
 
         model.params.MIPFocus = 3
-        model.params.ObjScale = -0.75
+        model.params.ObjScale = 0
         # model.params.ScaleFlag = 3
         model.params.Cutoff = q**k_lo
 
@@ -110,14 +112,14 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
         model.params.Aggregate = 1
 
         # memory soft limit to 48 GB available 64 GB
-        model.params.SoftMemLimit = 32
-        model.params.MemLimit = 48
+        model.params.SoftMemLimit = 48
+        model.params.MemLimit = 54
         model.params.NodefileStart = 100
         model.params.NodefileDir = "outputs/nodefiles"
 
         # model.params.BestObjStop = q**k_up
 
-        model.params.TimeLimit = 4*60*60 # 4 hour
+        model.params.TimeLimit = 4*60*60 # 1 hour
 
         # model.write(f"outputs/models/Extended_LCD_ILP_{q}_{n}_{d}_{k_lo}.lp")
         # model.write(f"outputs/models/Extended_LCD_ILP_{q}_{n}_{d}_{k_lo}.mps")
@@ -170,6 +172,8 @@ def Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache:dict,  threads_
             if bounded_upper_bound:
                 best_bound = f"{k_up}up"
 
+            print(f"Trial {trial} did not find feasible solution. Status: {gurobi_status_to_str(model.Status)}. Model prep duration: {model_prep_duration} Model optimization duration: {model_duration}\n")
+            
             if trial == 0:
                 model.params.MIPFocus = 2
                 continue
@@ -255,25 +259,27 @@ def compute_lcd_bound(q, n, d, krawtchouk_cache:dict, threads_count) -> Tuple[in
     
     k_up:int = safe_dimension_upper_bound(n, d, q) # type: ignore
 
-    best_upper_bound:float = -1
+    k_up_known = get_upper_bound_dimension(q, n, d)
+    
+    k_up = min(k_up, k_up_known) if isinstance(k_up_known, int) else k_up
+
     k_lo_used = -1
+    
     try:
-        for k_lo in range(0, k_up+1):
+        for k_lo in range(k_up, 0, -1):
+            k_lo_used = k_lo
             bound = Solve_Extended_LCD_ILP(q, n, d, k_lo, k_up, krawtchouk_cache, threads_count)
             
-            if not isinstance(bound, float):
-                if best_upper_bound > -1:
-                    break # LP program could not found suitable value so terminate the search
-                continue    
+            if isinstance(bound, str):
+                return q, n, d, k_lo, k_up, bound
             
-            best_upper_bound = bound
-            k_lo_used = k_lo
-            
+            if isinstance(bound, float):
+               return q, n, d, k_lo, k_up, bound            
     except:
         print(f"Error in ({q}, {n}, {d}): {traceback.format_exc()}")
         return q, n, d, k_lo_used, k_up, None
 
-    return q, n, d, k_lo_used, k_up, best_upper_bound
+    return q, n, d, k_lo_used, k_up, None
 
 
 # def is_integer(x, tol):
@@ -322,14 +328,14 @@ if __name__ == "__main__":
     if not os.path.exists(f"outputs/nodefiles"):
         os.makedirs("outputs/nodefiles")
 
-    if os.path.exists(f"outputs/LCD_ILP_output_{q}.csv"):
-        with open(f"outputs/LCD_ILP_output_{q}.csv", 'r') as file:
+    if os.path.exists(f"outputs/LCD_ILP_output_q{q}.csv"):
+        with open(f"outputs/LCD_ILP_output_q{q}.csv", 'r') as file:
             reader = csv.reader(file)
             output_array = list(reader) # type: ignore
             output_array = [[x for x in row] for row in output_array]
 
-    if os.path.exists(f"outputs/LCD_ILP_output_{q}_raw.csv"):
-        with open(f"outputs/LCD_ILP_output_{q}_raw.csv", 'r') as file:
+    if os.path.exists(f"outputs/LCD_ILP_output_q{q}_raw.csv"):
+        with open(f"outputs/LCD_ILP_output_q{q}_raw.csv", 'r') as file:
             reader = csv.reader(file)
             output_array_raw = list(reader) # type: ignore
             output_array_raw = [[x for x in row] for row in output_array_raw] # type: ignore
@@ -357,7 +363,7 @@ if __name__ == "__main__":
     #     except:
     #         pass
 
-    # with open(f"outputs/LCD_ILP_output_{q}.csv", 'w', newline='') as file:
+    # with open(f"outputs/LCD_ILP_output_q{q}.csv", 'w', newline='') as file:
     #     writer = csv.writer(file)
     #     writer.writerows(output_array)
 
@@ -393,11 +399,11 @@ if __name__ == "__main__":
                 output_array[n-1][d-1] = f"{bound_int}" if bound_int> 0 else bound # type: ignore
                 output_array_raw[n-1][d-1] = bound if bound is not None else -1 # type: ignore
 
-                with open(f"outputs/LCD_ILP_output_{q}.csv", 'w', newline='') as file:
+                with open(f"outputs/LCD_ILP_output_q{q}.csv", 'w', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerows(output_array)
 
-                with open(f"outputs/LCD_ILP_output_{q}_raw.csv", 'w', newline='') as file:
+                with open(f"outputs/LCD_ILP_output_q{q}_raw.csv", 'w', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerows(output_array_raw)
             except:
