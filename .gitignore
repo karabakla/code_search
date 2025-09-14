@@ -1,3 +1,6 @@
 *.pyc
 *.log
+LP/__pycache__
+y/gurobi.lic
+LP/__pycache__/Extended_ILP.cpython-312.pyc
 LP/__pycache__/LP_Utils.cpython-312.pyc
