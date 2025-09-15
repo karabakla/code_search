@@ -1,5 +1,5 @@
 from collections import deque
-from typing import Tuple, Set
+from typing import Tuple, Set,Optional
 from Utils.Code_Utils import safe_minimum_distance
 from Utils.MagmaUtils import MagmaSession
 from sage.all import * # type: ignore
@@ -32,7 +32,7 @@ def inner_product(v1:vector, v2:vector) -> int: # type: ignore
     """
     return v1.dot_product(v2)
 
-def select_best_possible_sub_dual_matrix(C:LinearCode, rows_count:int, max_iteration:int) -> Matrix: # type: ignore
+def select_best_possible_sub_dual_matrix(C:LinearCode, rows_count:int, max_iteration:int, target_d:Optional[int]=None) -> Matrix: # type: ignore
     """
     Selects a best dual random matrix in terms of minimum weight using bfs
     """ 
@@ -41,9 +41,9 @@ def select_best_possible_sub_dual_matrix(C:LinearCode, rows_count:int, max_itera
             return -1
         new_code = LinearCode(m.stack(C.generator_matrix()))
         return safe_minimum_distance(new_code)
-    
-    min_distance = safe_minimum_distance(C)
-    
+
+    min_distance = target_d if target_d is not None else safe_minimum_distance(C)
+
     dual_C = C.dual_code()
     best_sub_matrix = None
     best_min_distance = -1
@@ -63,7 +63,7 @@ def select_best_possible_sub_dual_matrix(C:LinearCode, rows_count:int, max_itera
     return best_sub_matrix
 
 
-def lemma_4_1_generate_new_code_from(C:LinearCode, i:int) -> Tuple[LinearCode, str, int]:
+def lemma_4_1_generate_new_code_from(C:LinearCode, i:int, min_d:Optional[int]) -> Tuple[LinearCode, str, int]:
     """
     if C is a binary LCD code with d ≥ 2 and d^⊥ ≥ 2 then exactly one of the codes C_i and C^i is also LCD.
     Where C_i is the shortened code and C^i is the punctured code
@@ -71,7 +71,7 @@ def lemma_4_1_generate_new_code_from(C:LinearCode, i:int) -> Tuple[LinearCode, s
     if not is_lcd_code(C):
         raise ValueError("C is not an LCD code")
     
-    min_distance_d = safe_minimum_distance(C)
+    min_distance_d = min_d if min_d is not None else safe_minimum_distance(C) 
     min_distance_d_dual = safe_minimum_distance(C.dual_code())
     if min_distance_d < 2 or min_distance_d_dual < 2:
         return C, f"{lemma_4_1_generate_new_code_from.__name__} skipped since d < 2 or d^⊥ < 2", i
@@ -242,7 +242,7 @@ def theorem_4_3_extended_const_method_generate_new_code_from(C:LinearCode, r:int
     
     return new_code, f"{theorem_4_3_extended_const_method_generate_new_code_from.__name__} r = {r}", (a, b, x)
 
-def theorem_4_7_generate_new_code_from(C:LinearCode, m:int, r:int, max_iteration:int) -> Tuple[LinearCode,str, Tuple[Matrix, Matrix]]: # type: ignore
+def theorem_4_7_generate_new_code_from(C:LinearCode, m:int, r:int, max_iteration:int, target_d:Optional[int]=None) -> Tuple[LinearCode,str, Tuple[Matrix, Matrix]]: # type: ignore
     """
     given a linear code C, returns a new linear code C' with [n+m, k+r]
     """
@@ -258,9 +258,9 @@ def theorem_4_7_generate_new_code_from(C:LinearCode, m:int, r:int, max_iteration
         return C, f"{theorem_4_7_generate_new_code_from.__name__} m = {m}, r = {r} skipped", (None, None)
     
     G = C.generator_matrix()
-    X = select_best_possible_sub_dual_matrix(C, r, max_iteration)
+    X = select_best_possible_sub_dual_matrix(C, r, max_iteration, target_d)
     if X is None:
-        X = select_best_possible_sub_dual_matrix(C, r, max_iteration)
+        X = select_best_possible_sub_dual_matrix(C, r, max_iteration, target_d)
         
     
     if X is None:
