@@ -14,7 +14,7 @@ from gurobipy import max_
 from KnownPaperResults import KnownResults
 from LCDCodePool.GetClosestLCD import get_lcd_codes_q, get_lcd_codes_q_excluding_quasi_cyclic
 from Utils.File_Cache import File_Cache
-from Utils.Code_Utils import safe_minimum_distance
+from Utils.Code_Utils import safe_minimum_distance, zero_code
 from Utils.MagmaUtils import MagmaSession
 from Utils.Types import BdlcLcdCodeRecord, CyclicCodeRecord, GeneratorMatrixRecord, LinearCodeRecord, QuasiCyclicCodeRecord
 from Utils.CodeConstruction.CodeConstUtils import is_lcd_code, lemma_4_1_generate_new_code_from, prop_4_2_generate_new_code_from, theorem_4_3_extended_const_method_generate_new_code_from, theorem_4_7_generate_new_code_from
@@ -125,7 +125,9 @@ class LinearCodeSearchRecord:
     def from_json(q:int, json_data:Dict[str, Any]) -> 'LinearCodeSearchRecord':
         G_str = json_data["GenMatrix"] # type: ignore
         G = GeneratorMatrixRecord.from_json(G_str) # type: ignore
-        code = LinearCode(matrix(GF(q), G.generator_matrix)) # type: ignore
+        
+        code = zero_code(GF(q), int(json_data["min_distance"])) if G.n == 0 else LinearCode(matrix(GF(q), G.generator_matrix)) # type: ignore
+        
         parent_code = None if json_data["parent_code"] is None else LinearCodeSearchRecord.from_json(q, json_data["parent_code"]) # type: ignore
         code_params = LinearCodeSearchRecordParams(code, json_data["min_distance"], json_data["gen_objects"], json_data["const_method_params"])
         record = LinearCodeSearchRecord(parent_code, code, code_params)
@@ -241,6 +243,12 @@ def apply_theorem_4_7_generate_code(code_record:LinearCodeSearchRecord, m:int, r
     return LinearCodeSearchRecord(code_record, new_code, code_params)
 
 def apply_prop_4_2_generate_generate_code(code_record:LinearCodeSearchRecord, r:int):
+    p = code_record.code.base_ring().characteristic()
+    m = r-1        
+    
+    if not p.divides(m*(1+m)):
+        return code_record
+
     new_code, new_params,new_gen_objects = prop_4_2_generate_new_code_from(code_record.code, r)
     new_code_d = safe_minimum_distance(new_code)
     
@@ -303,7 +311,7 @@ def get_improved_code_exact_d(target_n:int, target_k:int, target_d:int, code_rec
         new_code = apply_prop_4_2_generate_generate_code(new_code, diff_n())
         
     if should_improve_k():
-        new_code = apply_theorem_4_7_generate_code(new_code, 0, diff_k(), target_d, max_iteration)
+        new_code = apply_theorem_4_7_generate_code(new_code, max(diff_n(), 0), diff_k(), target_d, max_iteration)
      
     if new_code.code_params.n == target_n and new_code.code_params.k >= target_k and new_code.code_params.d == target_d:
         return new_code, False
@@ -392,7 +400,7 @@ def should_skip(q:int, n:int, d:int):
     return KnownResults.get_upper_bound_dimension_explicit(q, n, d) is not None
 
 if __name__ == "__main__":    
-    q = 2
+    q = 3
     
     n_d_code_list = get_lcd_code_pool(q,62)
     
