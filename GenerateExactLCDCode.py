@@ -186,7 +186,10 @@ def apply_lemma_4_1_generate_best_possible_code(code_record:LinearCodeSearchReco
     best_code = None
     
     for i in range(current_n):
-        new_code, new_params, new_gen_objects = lemma_4_1_generate_new_code_from(code_record.code, i, code_record.code_params.d)    
+        new_code, new_params, new_gen_objects = lemma_4_1_generate_new_code_from(code_record.code, i, code_record.code_params.d)
+        if "skipped" in new_params:
+            return code_record, True
+          
         new_d = safe_minimum_distance(new_code)
         code_params = LinearCodeSearchRecordParams(new_code, new_d, new_gen_objects, new_params)
         best_code =  LinearCodeSearchRecord(code_record, new_code, code_params) if best_code is None or new_d > best_code.code_params.d else best_code
@@ -255,7 +258,25 @@ def apply_prop_4_2_generate_generate_code(code_record:LinearCodeSearchRecord, r:
     code_params = LinearCodeSearchRecordParams(new_code, new_code_d, new_gen_objects, new_params)
     return LinearCodeSearchRecord(code_record, new_code, code_params)
 
-def get_improved_code_exact_d(target_n:int, target_k:int, target_d:int, code_record:LinearCodeSearchRecord, search_depth = 0) -> Tuple[LinearCodeSearchRecord, bool]:
+def get_improved_code_exact_d(target_n:int, target_k:int, target_d:int, code_record:LinearCodeSearchRecord) -> LinearCodeSearchRecord:
+    next_code = code_record
+    count= 0
+    for _ in range(500):
+        prev_code = next_code
+        next_code = get_improved_code_exact_d_imp(target_n, target_k, target_d, next_code)
+        if next_code.code_params.n == target_n and next_code.code_params.k >= target_k and next_code.code_params.d == target_d:
+            return next_code
+        
+        if next_code == prev_code:
+            count += 1
+            if count >= 5:
+                print (f"No further improvement for {code_record.code_params} -> {next_code.code_params}")
+                return next_code
+
+    print(f"Max iterations reached for {code_record.code_params} -> {next_code.code_params}")
+    return next_code
+    
+def get_improved_code_exact_d_imp(target_n:int, target_k:int, target_d:int, code_record:LinearCodeSearchRecord) -> LinearCodeSearchRecord:
     """
     Returns the appropriate construction method based on whether we want to
     improve code length (n), dimension (k), and/or minimum distance (d).
@@ -271,11 +292,8 @@ def get_improved_code_exact_d(target_n:int, target_k:int, target_d:int, code_rec
     
     p = code_record.code.characteristic()  
       
-    max_iteration = target_n * 1
-    
-    if search_depth > max_iteration:
-        return code_record, True
-     
+    max_iteration = target_n * 50
+         
     new_code = code_record
     
     def diff_k() -> int:
@@ -294,16 +312,8 @@ def get_improved_code_exact_d(target_n:int, target_k:int, target_d:int, code_rec
         return new_code.code_params.d < target_d
     
     if should_improve_d() or not should_improve_n():
-        new_code, skip = apply_lemma_4_1_generate_best_possible_code(new_code, target_d, should_improve_n() or should_improve_k())
+        new_code, _ = apply_lemma_4_1_generate_best_possible_code(new_code, target_d, should_improve_n() or should_improve_k())
         
-        # if skip:
-        #     search_depth += 1
-        
-        # # if d cannot be improved anymore return
-        # if should_improve_d() and not should_improve_n():
-        #     return new_code, False
-        
-    # next priority is improving k it may lower d but we cannot do anything about it
     if should_improve_k() and diff_n() >= p:
         new_code = apply_theorem_4_3_generate_best_possible_code(new_code, diff_n(), diff_k(), target_d, max_iteration)
 
@@ -312,11 +322,8 @@ def get_improved_code_exact_d(target_n:int, target_k:int, target_d:int, code_rec
         
     if should_improve_k():
         new_code = apply_theorem_4_7_generate_code(new_code, max(diff_n(), 0), diff_k(), target_d, max_iteration)
-     
-    if new_code.code_params.n == target_n and new_code.code_params.k >= target_k and new_code.code_params.d == target_d:
-        return new_code, False
-    
-    return get_improved_code_exact_d(target_n, target_k, target_d, new_code, search_depth + 1)
+         
+    return new_code
 
 def kill_child_processes(parent_pid, sig=signal.SIGTERM):
     try:
@@ -347,7 +354,7 @@ def exact_code_generation_favor_d(q:int, n:int, k:int, d:int, lcd_codes:Set[Line
         improved_code = [executor.submit(get_improved_code_exact_d, n, k, d, c) for c in code_pool]
         for feature in as_completed(improved_code):
             try:
-                next_code, dead_end = feature.result()
+                next_code = feature.result()
                 if not is_lcd_code(next_code.code):
                     print(f"Generated code is not LCD {next_code.code}")
                     continue
@@ -359,7 +366,6 @@ def exact_code_generation_favor_d(q:int, n:int, k:int, d:int, lcd_codes:Set[Line
                     executor.shutdown(wait=False)
                     kill_child_processes(os.getpid())
                     return
-                print(f"Processed Code: {next_code.code_params}") # type: ignore
             except:
                 traceback.print_exc()
                 continue
@@ -400,15 +406,15 @@ def should_skip(q:int, n:int, d:int):
     return KnownResults.get_upper_bound_dimension_explicit(q, n, d) is not None
 
 if __name__ == "__main__":    
-    q = 3
+    q =2
     
-    n_d_code_list = get_lcd_code_pool(q,62)
+    n_d_code_list = get_lcd_code_pool(q,70)
     
     output_file = File_Cache(f"outputs/code_generation_complete_q{q}.json")
         
     list_search_entries = []
     
-    for n in range(0,61):
+    for n in range(0,70):
         for d in range(1, n+1):
             if should_skip(q, n, d):
                 continue
@@ -444,8 +450,15 @@ if __name__ == "__main__":
     for index, entry in enumerate(list_search_entries):
         target_n, target_k, target_d = entry
         lcd_codes = set()
-        for n in range(target_n-3, target_n+5):
-            for d in range(target_d-4, target_d+5):
+        for n in range(target_n-4, target_n+4):
+            for d in range(target_d-5, target_d+5):
+                for k in range(0, n+1):
+                    if output_file.contains(f"{q}_{n}_{k}_{d}"):
+                       code_from_output = BdlcLcdCodeRecord.from_json(output_file.get(f"{q}_{n}_{k}_{d}")) # type: ignore
+                       if not is_lcd_code(code_from_output.to_sage_linear_code(None)):
+                           raise Exception(f"Code {code_from_output} is not LCD")
+                       lcd_codes.add(code_from_output) # type: ignore
+                       
                 for code in n_d_code_list[n][d]:
                     lcd_codes.add(code) # type: ignore
                 
