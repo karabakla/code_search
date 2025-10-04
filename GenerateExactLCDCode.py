@@ -292,7 +292,7 @@ def get_improved_code_exact_d_imp(target_n:int, target_k:int, target_d:int, code
     
     p = code_record.code.characteristic()  
       
-    max_iteration = target_n * 50
+    max_iteration = 500
          
     new_code = code_record
     
@@ -312,16 +312,16 @@ def get_improved_code_exact_d_imp(target_n:int, target_k:int, target_d:int, code
         return new_code.code_params.d < target_d
     
     if should_improve_d() or not should_improve_n():
-        new_code, _ = apply_lemma_4_1_generate_best_possible_code(new_code, target_d, should_improve_n() or should_improve_k())
+        new_code, _ = apply_lemma_4_1_generate_best_possible_code(new_code, target_d, False)
         
     if should_improve_k() and diff_n() >= p:
-        new_code = apply_theorem_4_3_generate_best_possible_code(new_code, diff_n(), diff_k(), target_d, max_iteration)
+        new_code = apply_theorem_4_3_generate_best_possible_code(new_code, diff_n(), diff_k()+1, target_d, max_iteration)
 
     if should_improve_n():
         new_code = apply_prop_4_2_generate_generate_code(new_code, diff_n())
         
     if should_improve_k():
-        new_code = apply_theorem_4_7_generate_code(new_code, max(diff_n(), 0), diff_k(), target_d, max_iteration)
+        new_code = apply_theorem_4_7_generate_code(new_code, max(diff_n(), 0), diff_k()+1, target_d, max_iteration)
          
     return new_code
 
@@ -450,15 +450,18 @@ if __name__ == "__main__":
     for index, entry in enumerate(list_search_entries):
         target_n, target_k, target_d = entry
         lcd_codes = set()
-        for n in range(target_n-4, target_n+4):
-            for d in range(target_d-5, target_d+5):
+        for n in range(target_n-15, target_n+15):
+            for d in range(target_d-15, target_d+15):
                 for k in range(0, n+1):
                     if output_file.contains(f"{q}_{n}_{k}_{d}"):
-                       code_from_output = BdlcLcdCodeRecord.from_json(output_file.get(f"{q}_{n}_{k}_{d}")) # type: ignore
-                       if not is_lcd_code(code_from_output.to_sage_linear_code(None)):
-                           raise Exception(f"Code {code_from_output} is not LCD")
-                       lcd_codes.add(code_from_output) # type: ignore
-                       
+                        try:
+                            code_from_output = BdlcLcdCodeRecord.from_json(output_file.get(f"{q}_{n}_{k}_{d}")) # type: ignore
+                            if not is_lcd_code(code_from_output.to_sage_linear_code(None)):
+                                raise Exception(f"Code {code_from_output} is not LCD")
+                            lcd_codes.add(code_from_output) # type: ignore
+                        except Exception as e:
+                            pass                           
+
                 for code in n_d_code_list[n][d]:
                     lcd_codes.add(code) # type: ignore
                 

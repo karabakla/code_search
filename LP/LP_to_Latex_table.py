@@ -38,7 +38,7 @@ def get_upper_bound_dimension_cached(q:int, n:int, d:int):
     
     return online_value
 
-generated_lcd_codes = File_Cache(f"outputs/code_generation_q{q}.json")
+generated_lcd_codes = File_Cache(f"outputs/code_generation_complete_q{q}.json")
 generated_lcd_cyclic_codes = File_Cache(f"LCDCodePool/LCD_Cyclic_Codes_q{q}.json")
 generated_lcd_quasi_cyclic_codes = File_Cache(f"LCDCodePool/LCD_QuasiCyclic_Codes_q{q}.json")
 
@@ -52,7 +52,8 @@ def get_generated_lcd_codes_n_d_flat() -> dict[str, int]:
         q = int(parts[0])
         n = int(parts[1])        
         k = int(parts[2])        
-        d = generated_lcd_codes.get(key)["min_distance"] # type: ignore
+        #d = generated_lcd_codes.get(key)["min_distance"] # type: ignore
+        d = int(parts[3])
         
         dict_key = f"{q}_{n}_{d}"
         max_k = max(ret.get(key, k), k)
@@ -88,11 +89,27 @@ for (n_min, n_max), (d_min, d_max) in n_d_list:
     output_array = [['0' for _ in range(n_max)] for _ in range(n_max)] 
 
         
-    if os.path.exists(f"outputs/LCD_ILP_output_q{q}.csv"):
-        with open(f"outputs/LCD_ILP_output_q{q}.csv", 'r') as file:
-            reader = csv.reader(file)
-            output_array = list(reader)
-
+    with open(f"outputs/LCD_ILP_output_q{q}.csv", 'r') as file:
+        reader = csv.reader(file)
+        output_array = list(reader)
+            
+    # for n in range(len(output_array)):
+    #     for d in range(len(output_array[0])):
+    #         k = int(output_array[n][d].rstrip('*').rstrip('up'))
+    #         k_low = int(output_array[n-1][d].rstrip('*').rstrip('up')) if n > 0 else int(output_array[n][d].rstrip('*').rstrip('up'))
+    #         k_up = int(output_array[n][d-1].rstrip('*').rstrip('up')) if d > 0 else int(output_array[n][d].rstrip('*').rstrip('up'))
+    #         if k < k_low:
+    #             if output_array[n][d].endswith('*'):
+    #                 print(f"Info: k decreased for n={n+1}, d={d+1}, but skipped: {k_low} -> {k}")
+    #                 # output_array[n-1][d] = f"{k}"
+    #             else:
+    #                 output_array[n][d] = f"{get_upper_bound_dimension_cached(q, n, d)}" # type: ignore
+    #                 print(f"Warning: k decreased for n={n+1}, d={d+1}: {k_low} -> {k}")
+    
+    # with open(f"outputs/LCD_ILP_output_q{q}_cleaned.csv", 'w', newline='') as file:
+    #     writer = csv.writer(file)
+    #     writer.writerows(output_array)
+    
     # """
     latex_table = ""
     #latex_table = "\\begin{landscape}"
@@ -122,17 +139,17 @@ for (n_min, n_max), (d_min, d_max) in n_d_list:
         
         return f"{found_code_dim}-{k}"
     
-    def to_row_string(n:int, r:str, d:int) -> str:
-        if '*' in r:
-            return f"${r.rstrip('*')}^*$"
+    def to_row_string(n:int, k:str, d:int) -> str:
+        if '*' in k:
+            return f"${k.rstrip('*')}^*$"
         
-        if 'up' in r:
-            r_int = int(r.rstrip('up'))
+        if 'up' in k:
+            r_int = int(k.rstrip('up'))
             r_int = get_upper_bound(n, d, r_int)
             return f"${add_found_code_if_applicable(q,d, r_int)}^\\uparrow$"
         
-        r_bounded = get_upper_bound(n, d, int(r))
-        return str(add_found_code_if_applicable(n,d, r_bounded))
+        r_bounded = get_upper_bound(n, d, int(k))
+        return str(add_found_code_if_applicable(n,d, r_bounded))       
     
     for _, n in enumerate(range(n_min-1, n_max)):
         if n < d_min :
